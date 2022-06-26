@@ -4,7 +4,8 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <span>Stella Lee</span>
+        <p>I love coffee chats!</p>
+        <span>© STELLA LEE 2022</span>
       </footer>
     </>
   );

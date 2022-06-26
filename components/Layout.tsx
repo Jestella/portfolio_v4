@@ -1,18 +1,14 @@
-import Meta from './Meta';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Meta from './meta';
+import Navbar from './navbar';
+import Footer from './footer';
 
-const Layout = ({ children }) => {
+export default function Layout({ children }) {
   return (
     <>
       <Meta />
-      <div>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </div>
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
     </>
   );
-};
-
-export default Layout;
+}

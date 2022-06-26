@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Devlog() {
-  return <div>Devlog</div>;
+  return (
+    <div>
+      <h1>DEVLOG: Coming Soon!</h1>
+    </div>
+  );
 }
 
 export default Devlog;

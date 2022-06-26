@@ -5,6 +5,9 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
+          <Link href='/'>JE.</Link>
+        </li>
+        <li>
           <Link href='/about'>ABOUT</Link>
         </li>
         <li>
@@ -12,6 +15,12 @@ const Navbar = () => {
         </li>
         <li>
           <Link href='/devlog'>DEVLOG</Link>
+        </li>
+        <li>
+          <Link href='/lab'>LAB</Link>
+        </li>
+        <li>
+          <Link href='/'>STELLA</Link>
         </li>
       </ul>
     </nav>
