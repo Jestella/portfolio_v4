@@ -1,7 +1,9 @@
-import React from 'react';
+import project from './project/[id]';
 
-function Portfolio() {
-  return <div>portfolio</div>;
+export default function Portfolio({}) {
+  return (
+    <>
+      <h1>portfolio</h1>
+    </>
+  );
 }
-
-export default Portfolio;

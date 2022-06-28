@@ -1,8 +1,8 @@
-import Meta from './meta';
-import Navbar from './navbar';
-import Footer from './footer';
+import Meta from './Meta';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <>
       <Meta />
@@ -11,4 +11,6 @@ export default function Layout({ children }) {
       <Footer />
     </>
   );
-}
+};
+
+export default Layout;

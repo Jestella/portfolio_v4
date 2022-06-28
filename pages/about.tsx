@@ -1,8 +1,9 @@
-import React from 'react';
+import Meta from '../components/Meta';
 
 function About() {
   return (
     <>
+      <Meta title='About' />
       <div className='about'>
         <div className='about_container'>
           <h1>
