@@ -1,6 +1,7 @@
 import Meta from './Meta';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import FixedItem from './FixedItem';
 
 const Layout = ({ children }) => {
   return (
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
       <Meta />
       <Navbar />
       <main>{children}</main>
+      <FixedItem />
       <Footer />
     </>
   );

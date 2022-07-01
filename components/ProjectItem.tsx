@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import projectStyles from '../styles/Project.module.css';
+import Image from 'next/image';
+import projectStyles from '../styles/Project.module.scss';
 
 const ProjectItem = ({ project }) => {
   return (

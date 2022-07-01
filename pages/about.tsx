@@ -1,6 +1,20 @@
 import Meta from '../components/Meta';
+import Image from 'next/image';
+import { useState } from 'react';
+import { FaRegFolder, FaRegFolderOpen } from 'react-icons/fa';
+import memoji from '../public/src/assets/images/memoji.png';
 
 function About() {
+  const [hover, setHover] = useState();
+
+  const handleMouseIn = () => {
+    setHover(true);
+  };
+
+  const handleMouseOut = () => {
+    setHover(false);
+  };
+
   return (
     <>
       <Meta title='About' />
@@ -8,7 +22,13 @@ function About() {
         <div className='about_container'>
           <h1>
             Hello, I'm Stella!&nbsp;
-            {/* <img src={memoji} className='Memoji' /> */}
+            <Image
+              src={memoji}
+              width={60}
+              height={60}
+              alt='memoji'
+              className='Memoji'
+            />
           </h1>
           <p>
             I am a self-taught front end web developer,
@@ -30,20 +50,20 @@ function About() {
             pet someone else’s dog and watch sunsets.
           </p>
 
-          {/* <button
+          <button
             className='envelop-btn'
             onMouseOver={handleMouseIn}
             onMouseOut={handleMouseOut}
           >
-            <a href={resume} target='_blank'>
-        RESUME &nbsp;
-        {hover ? (
-          <FaRegFolderOpen className='folder_open' />
-        ) : (
-          <FaRegFolder className='folder' />
-        )}
-      </a>
-          </button> */}
+            <a target='_blank'>
+              RESUME &nbsp;
+              {hover ? (
+                <FaRegFolderOpen className='folder_open' />
+              ) : (
+                <FaRegFolder className='folder' />
+              )}
+            </a>
+          </button>
         </div>
       </div>
     </>

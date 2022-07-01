@@ -2,28 +2,44 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link href='/'>JE.</Link>
-        </li>
-        <li>
-          <Link href='/about'>ABOUT</Link>
-        </li>
-        <li>
-          <Link href='/portfolio'>PORTFOLIO</Link>
-        </li>
-        <li>
-          <Link href='/devlog'>DEVLOG</Link>
-        </li>
-        <li>
-          <Link href='/lab'>LAB</Link>
-        </li>
-        <li>
-          <Link href='/'>STELLA</Link>
-        </li>
-      </ul>
-    </nav>
+    <div className='navbar'>
+      <nav>
+        <ul className='nav'>
+          <li>
+            <Link href='/' className='nav-item nav-left'>
+              JE.
+            </Link>
+          </li>
+          <ul className='nav-sm-container'>
+            <li>
+              <Link href='/about' className='nav-sm'>
+                ABOUT
+              </Link>
+            </li>
+            <li>
+              <Link href='/portfolio' className='nav-sm'>
+                PORTFOLIO
+              </Link>
+            </li>
+            <li>
+              <Link href='/devlog' className='nav-sm'>
+                DEVLOG
+              </Link>
+            </li>
+            <li>
+              <Link href='/lab' className='nav-sm'>
+                LAB
+              </Link>
+            </li>
+          </ul>
+          <li>
+            <Link href='/' className='nav-item nav-right'>
+              STELLA
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 
