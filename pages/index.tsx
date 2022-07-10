@@ -3,12 +3,10 @@ import Link from 'next/link';
 
 import ProjectList from '../components/ProjectList';
 import SectionTitle from '../components/SectionTitle';
-import { server } from '../config';
-
 import Main from '../components/Main';
-
-import GoToTop from '../components/GoToTop';
 import Button from '../components/Button';
+
+import { server } from '../config';
 
 import {
   FaCodeBranch,

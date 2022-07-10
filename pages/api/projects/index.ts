@@ -1,5 +1,5 @@
-import { projects } from '../../../data';
+import { projectData } from '../../../data';
 
 export default function handler(req, res) {
-  res.status(200).json(projects);
+  res.status(200).json(projectData);
 }

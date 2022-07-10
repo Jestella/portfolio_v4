@@ -1,9 +1,13 @@
 import project from './project/[id]';
+import Button from '../components/Button';
+import PortfolioItems from '../components/PortfolioItems';
 
-export default function Portfolio({}) {
+const Portfolio = () => {
   return (
-    <>
-      <h1>portfolio</h1>
-    </>
+    <div className='portfolio-page'>
+      <PortfolioItems />
+    </div>
   );
-}
+};
+
+export default Portfolio;

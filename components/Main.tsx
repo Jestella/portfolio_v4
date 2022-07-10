@@ -10,10 +10,10 @@ const Main = ({ t, i18n }) => {
         <div className='main_image'>
           <Image
             src={profileImage}
-            width={100}
-            height={100}
+            width={280}
+            height={280}
             alt='Stella Lee'
-            className='profile_image'
+            className='profile-image'
           />
         </div>
         <div className='main_content'>

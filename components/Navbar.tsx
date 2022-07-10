@@ -6,35 +6,35 @@ const Navbar = () => {
       <nav>
         <ul className='nav'>
           <li>
-            <Link href='/' className='nav-item nav-left'>
-              JE.
+            <Link href='/'>
+              <span className='nav-item nav-left'>JE.</span>
             </Link>
           </li>
           <ul className='nav-sm-container'>
             <li>
-              <Link href='/about' className='nav-sm'>
-                ABOUT
+              <Link href='/about'>
+                <span className='nav-sm'> ABOUT</span>
               </Link>
             </li>
             <li>
-              <Link href='/portfolio' className='nav-sm'>
-                PORTFOLIO
+              <Link href='/portfolio'>
+                <span className='nav-sm'>PORTFOLIO</span>
               </Link>
             </li>
             <li>
-              <Link href='/devlog' className='nav-sm'>
-                DEVLOG
+              <Link href='/devlog'>
+                <span className='nav-sm'> DEVLOG</span>
               </Link>
             </li>
             <li>
-              <Link href='/lab' className='nav-sm'>
-                LAB
+              <Link href='/lab'>
+                <span className='nav-sm'> LAB</span>
               </Link>
             </li>
           </ul>
           <li>
-            <Link href='/' className='nav-item nav-right'>
-              STELLA
+            <Link href='/'>
+              <span className='nav-item nav-right'>STELLA</span>
             </Link>
           </li>
         </ul>
