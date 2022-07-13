@@ -29,7 +29,7 @@ const Main = ({ t, i18n }) => {
           <br />
           <span className='gray3'>{t('main.gray3')}</span>
 
-          {/* <div className='lang_btns'>
+          <div className='lang_btns'>
             <button
               className='lang_btn'
               onMouseEnter={() => {
@@ -54,15 +54,15 @@ const Main = ({ t, i18n }) => {
             >
               KR
             </button>
-            <button
-              className="lang_btn"
+            {/* <button
+              className='lang_btn'
               onMouseEnter={() => {
-                i18n.changeLanguage("jp-JP");
+                i18n.changeLanguage('jp-JP');
               }}
             >
               JP
-            </button>
-          </div> */}
+            </button> */}
+          </div>
         </div>
       </div>
     </div>

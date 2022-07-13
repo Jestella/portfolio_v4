@@ -14,10 +14,9 @@ function Lab() {
         <Link href='/' className='btn'>
           <button className='dev-btn'>Home</button>
         </Link>
-
         {/* <div>
-            <button onClick={handleClick}>{likes} Likes</button>
-          </div> */}
+          <button onClick={handleClick}>{likes} Likes</button>
+        </div> */}
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import projectStyles from '../styles/Project.module.scss';
 
 const ProjectItem = ({ project }) => {
   return (
-    <Link href={`/project/${project.id}`}>
+    <Link href={`/portfolio/${project.id}`}>
       <a className={projectStyles.card}>
         <h3>{project.title}</h3>
         <p>{project.sub}</p>

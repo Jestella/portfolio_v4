@@ -1,9 +1,9 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import translationEn from "./translation.en";
-import translationFr from "./translation.fr";
-import translationKo from "./translation.ko";
-import translationJp from "./translation.jp";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import translationEn from './translation.en.json';
+import translationFr from './translation.fr.json';
+import translationKo from './translation.ko.json';
+import translationJp from './translation.jp.json';
 
 const resource = {
   en: {
@@ -21,8 +21,8 @@ const resource = {
 };
 i18n.use(initReactI18next).init({
   resources: resource,
-  lng: "en",
-  fallbackLng: "en",
+  lng: 'en',
+  fallbackLng: 'en',
   debug: true,
   //  keySeparator:false,
   interpolation: {

@@ -64,12 +64,6 @@ function Devlog() {
             </div>
           </div>
         ))}
-
-        <div className='center'>
-          <Link href='/' className='btn'>
-            <Button>Home</Button>
-          </Link>
-        </div>
       </div>
     </div>
   );

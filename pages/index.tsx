@@ -5,15 +5,11 @@ import ProjectList from '../components/ProjectList';
 import SectionTitle from '../components/SectionTitle';
 import Main from '../components/Main';
 import Button from '../components/Button';
+import ResponsiveIcons from '../components/ResponsiveIcons';
 
 import { server } from '../config';
 
 import {
-  FaCodeBranch,
-  FaCode,
-  FaWrench,
-  FaCog,
-  FaStarOfLife,
   FaReact,
   FaNodeJs,
   FaJs,
@@ -28,20 +24,11 @@ import nextjs from '../public/src/assets/images/next-js.png';
 import memoji from '../public/src/assets/images/memoji.png';
 
 export default function Home({ projects }) {
-  // let navigate = useNavigate();
-
   return (
     <>
       <div>
         <div className='home'>
-          <div className='image_container hue_shift'>
-            <FaCodeBranch className='fa-code-branch responsive_icon' />
-            <FaCog className='fa-cog responsive_icon' />
-            <FaCode className='fa-code responsive_icon' />
-            <FaWrench className='fa-wrench responsive_icon' />
-            <FaStarOfLife className='fa-star responsive_icon' />
-          </div>
-
+          <ResponsiveIcons />
           <Main />
         </div>
       </div>
@@ -55,8 +42,8 @@ export default function Home({ projects }) {
               Hello, I'm Stella!&nbsp;
               <Image
                 src={memoji}
-                width={100}
-                height={100}
+                width={80}
+                height={80}
                 alt='memoji'
                 className='Memoji'
               />
@@ -64,9 +51,9 @@ export default function Home({ projects }) {
             <p>
               Currently looking for a new client & full-time job opportunity.
               Click to learn more about me. &nbsp;
-              <Link href='/about'>
-                <Button>Click</Button>
-              </Link>
+              <Button>
+                <Link href='/about'>Click</Link>
+              </Button>
             </p>
           </div>
         </div>
@@ -133,7 +120,6 @@ export default function Home({ projects }) {
             </ul>
           </div>
         </div>
-        {/* <GoToTop /> */}
       </div>
 
       <div>
@@ -149,7 +135,9 @@ export default function Home({ projects }) {
           <h2>💻</h2>
           <p>What I learned & built this month.</p>
           <div className='center'>
-            <Button>More</Button>
+            <Button>
+              <Link href='/devlog'>More</Link>
+            </Button>
           </div>
         </div>
       </div>
@@ -160,7 +148,9 @@ export default function Home({ projects }) {
           <h2>💡</h2>
           <p>Random Experiments.</p>
           <div className='center'>
-            <Button className='dev-btn'>More</Button>
+            <Button>
+              <Link href='/lab'>More</Link>
+            </Button>
           </div>
         </div>
       </div>
