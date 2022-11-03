@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "How to become a self-taught web developer?",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 2,
+    "title": "Top 5 free online courses for web developers?",
+    "excerpt": "Diam donec adipiscing tristique risus. Augue interdum velit euismod in pellentesque massa placerat duis ultricies. Aliquam sem fringilla ut morbi tincidunt augue interdum. Amet facilisis magna etiam tempor orci eu lobortis elementum. ",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 3,
+    "title": "Here is how to make your website more accessible",
+    "excerpt": "Vestibulum sed arcu non odio euismod lacinia at quis risus. Non blandit massa enim nec dui nunc mattis enim. Eu consequat ac felis donec. Ultricies integer quis auctor elit. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 4,
+    "title": "Is it necessary for a web developer to learn UI/UX design?",
+    "excerpt": "Dapibus ultrices in iaculis nunc sed. Amet tellus cras adipiscing enim eu turpis. Tempus egestas sed sed risus pretium quam vulputate. Adipiscing tristique risus nec feugiat in. Dui sapien eget mi proin. Enim sit amet venenatis urna cursus eget nunc scelerisque.",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  }
+]

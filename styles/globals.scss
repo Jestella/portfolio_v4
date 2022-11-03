@@ -1,0 +1,972 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --color-black: #262626;
+  --color-gray-light: #d3d3d3;
+  --color-gray-dark: #767474;
+  --color-yellow: #fddb3a;
+  --color-pink-dark: #ffa07a;
+  --color-pink-light: #ffeded;
+  --color-green-dark: #283c3d;
+  --color-text: #2e2424;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: var(--font-family);
+  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+  color: var(--color-text);
+}
+
+body ::selection {
+  color: var(--color-yellow);
+  background: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+li {
+  list-style-type: none;
+  line-height: 1.4;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+/* card */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  margin: 20px 0;
+  text-align: center;
+
+  img {
+    max-width: 400px;
+    height: 260px;
+
+    &:hover {
+      opacity: 0.7;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  .card-text {
+    width: 400px;
+    height: 90px;
+    cursor: pointer;
+  }
+
+  .card-project-name {
+    font-size: 16px;
+    margin: 10px 0 5px;
+  }
+
+  .card-project-subname {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .custom-button {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1373px) {
+  }
+
+  @media screen and (max-width: 799px) {
+    img {
+      width: 600px;
+      height: 260px;
+    }
+
+    .card-text {
+      width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    img {
+      width: 400px;
+      height: 260px;
+    }
+
+    .card-text {
+      width: 400px;
+    }
+  }
+}
+
+/* button */
+
+button:hover,
+span:hover {
+  transition: 0.2s ease-in-out;
+}
+
+.button {
+  background-color: inherit;
+  color: var(--color-yellow);
+  border: 1px solid var(--color-yellow);
+  width: 86px;
+  height: 30px;
+  font-size: 15px;
+
+  &:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+  }
+}
+
+/* navbar */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  cursor: pointer;
+  color: var(--color-black);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 26px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links p {
+  font-size: 13px;
+  color: var(--color-gray-light);
+  font-weight: 500;
+  margin: 0 30px;
+
+  &:hover {
+    color: var(--color-yellow);
+  }
+}
+
+.nav-item {
+  -webkit-text-stroke: 0.5px var(--color-gray-light);
+  font-weight: 900;
+  font-size: 23px;
+
+  &:hover {
+    -webkit-text-stroke: 0;
+    color: var(--color-yellow);
+    text-shadow: none;
+  }
+}
+
+.nav-left {
+  top: 26px;
+  left: 26px;
+}
+
+.nav-right {
+  right: 26px;
+}
+
+.nav-menu {
+  display: none;
+  position: relative;
+}
+
+.nav-menu-mobile {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--color-yellow);
+  width: 100vw;
+  margin-top: 1rem;
+  padding: 2rem 0;
+  font-size: 14px;
+}
+
+.nav-menu-mobile p {
+  margin: 1rem 0;
+}
+
+/* home - main */
+
+.home {
+  padding: 25px 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 175px;
+  margin: 30px 5px;
+  font-family: 'Roboto', sans-serif;
+
+  @media screen and (max-width: 799px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px 50%;
+    margin: 20px 0;
+  }
+}
+
+.main-image {
+  @media screen and (max-width: 799px) {
+    justify-self: center;
+    margin-bottom: 20px;
+  }
+}
+
+.profile-image {
+  padding: 2px;
+  background-color: var(--color-black);
+  border-radius: 150%;
+
+  &:hover {
+    // box-shadow: 0 1px 20px #595260;
+    transition: 0.1.5s ease-in-out;
+    opacity: 90%;
+  }
+
+  @media screen and (max-width: 1150px) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media screen and (max-width: 799px) {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.main-content {
+  margin-left: 40px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42px;
+
+  .gray1 {
+    color: var(--color-gray-dark);
+  }
+
+  .gray2 {
+    color: #aeabab;
+  }
+
+  .gray3 {
+    color: #cecbcb;
+  }
+
+  @media screen and (max-width: 1150px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: 1004px) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media screen and (max-width: 799px) {
+    font-size: 30px;
+    margin: 0;
+    padding: 0 3%;
+    line-height: 34px;
+    width: 100vw;
+    margin-left: 5%;
+  }
+}
+
+/* home - responsive icons */
+
+.hue_shift {
+  animation: hue-shift 5s infinite alternate;
+}
+
+.responsive_icon {
+  position: absolute;
+  font-size: 42px;
+
+  @media screen and (max-width: 799px) {
+    display: none;
+  }
+}
+
+.fa-code-branch {
+  top: 180px;
+  left: 230px;
+  animation: rotate 2s infinite alternate;
+  color: #ffbcbc;
+}
+
+.fa-cog {
+  top: 370px;
+  left: 120px;
+  animation: rotate 2.5s infinite alternate;
+  color: #7dedff;
+}
+
+.fa-star {
+  top: 150px;
+  right: 350px;
+  animation: rotate 2s infinite alternate;
+  color: #b3e283;
+}
+
+.fa-wrench {
+  top: 360px;
+  right: 220px;
+  animation: move-up 2s infinite alternate;
+  color: #d9dd6b;
+}
+
+.fa-code {
+  top: 260px;
+  right: 90px;
+  animation: move-down 2s infinite alternate;
+  color: #c490e4;
+}
+
+/* animation */
+
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(2rem);
+  }
+}
+
+@keyframes move-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2rem);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes hue-shift {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(365deg);
+  }
+}
+
+/* section title */
+
+.section-title-container {
+  padding: 30px 0 0;
+}
+
+.section-title {
+  color: var(--color-gray-light);
+  margin: 0 0 -20px 30px;
+
+  @media screen and (max-width: 799px) {
+    text-align: center;
+    margin: 20px 12px 30px;
+  }
+}
+
+/* home - about */
+
+.about {
+  color: #fff;
+  background-color: var(--color-black);
+  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+  padding: 30px 0;
+}
+
+.about-container {
+  padding: 0 0 80px;
+  margin: 0 90px;
+
+  h1 {
+    padding: 0 0 26px;
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  h3 {
+    padding: 40px 0 10px 0;
+  }
+
+  p {
+    font-size: 19px;
+    font-weight: 200;
+  }
+
+  span {
+    color: var(--color-yellow);
+  }
+
+  @media screen and (max-width: 799px) {
+    margin: 12px;
+    text-align: center;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+}
+
+/* home - skills */
+
+.skills-container {
+  margin: 100px 60px;
+
+  @media screen and (max-width: 799px) {
+    margin-left: 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 799px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    li {
+      font-size: 42px;
+      text-align: center;
+
+      p {
+        font-size: 13px;
+        color: var(--color-black);
+        margin-top: 0;
+        font-weight: 400;
+      }
+    }
+
+    .typescript,
+    .sass {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+/* home - project */
+.home-project {
+  background-color: var(--color-black);
+  color: #fff;
+  padding: 30px 0;
+}
+
+.home-project-container {
+  padding: 40px 0;
+  margin: 0 90px;
+
+  @media screen and (max-width: 799px) {
+    padding: 0 0 50px;
+  }
+}
+
+.project-btns Button {
+  margin: 10px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(5rem);
+}
+
+.center {
+  margin: 30px 0 50px;
+  text-align: center;
+}
+
+/* home - devlog */
+.home-devlog {
+  padding: 30px 0 100px;
+  background-color: var(--color-pink-light);
+  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+}
+
+.home-devlog-container {
+  text-align: center;
+  padding: 50px 0;
+
+  h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    padding: 50px 0 0;
+
+    @media screen and (max-width: 799px) {
+      font-size: 36px;
+      padding: 50px 0 0;
+    }
+  }
+
+  @media screen and (max-width: 799px) {
+    padding: 0 0 50px;
+  }
+}
+
+.dev-btn {
+  background-color: inherit;
+  color: var(--color-pink-dark);
+  border: 1px solid var(--color-pink-dark);
+  width: 86px;
+  height: 30px;
+  font-size: 15px;
+
+  &:hover {
+    background-color: var(--color-pink-dark);
+    color: var(--color-black);
+  }
+}
+
+.center {
+  margin: 30px 0 50px;
+  text-align: center;
+}
+
+/* home - lab */
+.home-lab {
+  padding: 30px 0 100px;
+  background-color: var(--color-green-dark);
+  color: #fff;
+  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+}
+
+.home-lab-container {
+  text-align: center;
+  padding: 50px 0;
+
+  h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    padding: 50px 0 0;
+
+    @media screen and (max-width: 799px) {
+      font-size: 36px;
+      padding: 50px 0 0;
+    }
+  }
+
+  @media screen and (max-width: 799px) {
+    padding: 0 0 50px;
+  }
+}
+
+.center {
+  margin: 30px 0 50px;
+  text-align: center;
+}
+
+/* home - blog */
+
+.home-blog {
+  background-color: #dae9cb;
+  padding: 100px 0;
+}
+
+/* fixed icons */
+.fixed-item {
+  position: fixed;
+  top: 86vh;
+  right: 24px;
+  width: 30px;
+  height: 100px;
+
+  button {
+    color: var(--color-gray-light);
+    border: none;
+    background-color: inherit;
+    margin: 3px;
+
+    &:hover {
+      transition: 0.2s ease-in-out;
+      color: #595260;
+      border-radius: 50%;
+    }
+  }
+}
+
+.fixed-icon {
+  font-size: 24px;
+}
+
+/* about page */
+
+.about {
+  color: #fff;
+  background-color: #262626;
+  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+  padding: 100px 0;
+}
+
+.about_container {
+  padding: 0 0 80px;
+  margin: 0 90px;
+
+  @media screen and (max-width: 799px) {
+    margin: 12px;
+  }
+
+  h1 {
+    padding: 0 0 10px;
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+
+    @media screen and (max-width: 799px) {
+      font-size: 36px;
+    }
+  }
+
+  .Memoji {
+    width: 50px;
+    height: 50px;
+  }
+
+  h3 {
+    padding: 40px 0 6px 0;
+  }
+
+  p {
+    font-size: 19px;
+  }
+}
+
+/* portfolio page */
+
+.portfolio {
+  background: var(--color-black);
+  color: var(--color-gray-light);
+}
+
+.portfolio-container {
+  position: relative;
+  padding: 120px 0;
+}
+
+.project-container {
+  display: flex;
+  justify-content: left;
+  margin: 20px 90px 130px 90px;
+
+  @media screen and (max-width: 799px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+}
+
+.project-name {
+  margin-left: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+
+  @media screen and (max-width: 799px) {
+    text-align: center;
+    margin: 60px 0 20px 0;
+  }
+}
+
+.project-image-container {
+  img {
+    width: 460px;
+
+    @media screen and (max-width: 799px) {
+      width: 100vw;
+      padding: 10px;
+    }
+  }
+}
+
+.project-content-container {
+  width: 50%;
+  margin-left: 40px;
+
+  .project-technologies {
+    color: #ffe268;
+    font-weight: 400;
+  }
+
+  .project-subname {
+    font-style: italic;
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 16.5px;
+    line-height: 22px;
+  }
+
+  Button {
+    margin: 0 3px;
+  }
+
+  @media screen and (max-width: 799px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 12px;
+  }
+}
+
+/* devlog page */
+
+.devlog {
+  background-color: #faa5a5;
+  padding: 30px 0;
+  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+}
+
+.devlog-container {
+  padding: 0 0 80px;
+  margin: 0 90px;
+}
+
+.devlog-box {
+  border-left: 3px solid #f5e3e3;
+  margin-bottom: 40px;
+  line-height: 17px;
+}
+
+.devlog-textbox {
+  padding: 20px;
+}
+
+.month {
+  font-size: 14.5px;
+}
+
+.devlog-box-subtitle::after {
+  content: ' ';
+  border: 1px solid #f5e3e3;
+  margin: 20px 0;
+  display: block;
+  max-width: 50px;
+}
+
+.related-link {
+  cursor: pointer;
+  font-size: 16px;
+
+  a {
+    color: #7446df;
+  }
+  :hover {
+    color: #da6464;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .devlog-container {
+    margin: 0 20px;
+  }
+}
+
+/* lab page */
+
+.lab {
+  background-color: var(--color-green-dark);
+  color: #fff;
+  padding: 200px 0 250px;
+  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+}
+
+.lab-container {
+  padding: 80px 0 100px;
+  margin: 0 80px;
+  text-align: center;
+}
+
+/* blog page */
+
+.article {
+  color: var(--color-black);
+  background-color: #dae9cb;
+  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+  padding: 100px 0;
+}
+
+.article-container {
+  padding: 0 0 80px;
+  margin: 0 90px;
+
+  p {
+    padding: 100px 0;
+    font-size: 1.1rem;
+  }
+}
+
+/* footer */
+
+.footer {
+  height: 220px;
+  background-color: var(--color-black);
+}
+
+.footer-message {
+  font-size: 17px;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footer-container {
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.contact-items {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.contact-item {
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    transition: 0.2s ease-in-out;
+    background-color: var(--color-yellow);
+    color: #2626;
+  }
+}
+
+.socialmedia {
+  font-size: 26px;
+  margin: 12px;
+}
+
+.mail {
+  font-size: 22px;
+  margin: 14px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: var(--color-gray-dark);
+}
+
+/* @media */
+
+@media screen and (max-width: 1050px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .button {
+    font-size: 13px;
+    width: 90px;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+}

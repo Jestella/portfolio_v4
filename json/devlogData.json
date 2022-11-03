@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "month": "January",
+    "title": "Data Structures & Algorithms",
+    "sub": "Completed the Udemy course [Master the Coding Interview: Data Strucrues + Algorithms]",
+    "linkUrl": "https://www.udemy.com/certificate/UC-61c4a8ac-bf1c-4d72-b634-2e002328994c/",
+    "link": "Certificate of Completion"
+  },
+  {
+    "id": 2,
+    "month": "February",
+    "title": "Next.js",
+    "sub": "Learned Next.js from scratch and created my first Next.js application with Next.js tutorial",
+    "linkUrl": "https://github.com/Jestella/nextjs-blog",
+    "link": "Github Repository"
+  },
+  {
+    "id": 3,
+    "month": "March",
+    "title": "Next.js",
+    "sub": "Built a restaurant website with Next.js",
+    "linkUrl": "https://bistrolee-jestella.vercel.app/",
+    "link": "Live Demo"
+  },
+  {
+    "id": 4,
+    "month": "April",
+    "title": "MERN Project",
+    "sub": "Built a CRUD API web application with MongoDB, Express, React and Node.js",
+    "linkUrl": "https://github.com/Jestella/mern2",
+    "link": "Github Repository"
+  },
+
+  {
+    "id": 5,
+    "month": "July",
+    "title": "Creative Coding with JavaScript",
+    "sub": "Made visuals with JavaScript",
+    "linkUrl": "https://youtube.com/shorts/TZWnCKpQenY?feature=share",
+    "link": "Output1"
+  },
+  {
+    "id": 6,
+    "month": "August & September",
+    "title": "WordPress",
+    "sub": "Built a WordPress website for a small business owner",
+    "linkUrl": "https://skinlabmedispa.com",
+    "link": "Spa Website"
+  },
+  {
+    "id": 7,
+    "month": "October",
+    "title": "Shopify",
+    "sub": "Building a Shopify website for a cannabis store",
+    "linkUrl": " ",
+    "link": "Coming soon"
+  }
+]
