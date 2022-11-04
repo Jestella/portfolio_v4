@@ -13,7 +13,7 @@ function Lab() {
       <Navbar />
       <div className='lab-container'>
         <h1>Coming Soon...💡</h1>
-        <p>I am still working on this page. Thanks for your patience!</p>
+        <p>I am still working on this page! Thanks for your patience :)</p>
         <Link href='/' className='btn'>
           <button className='dev-btn'>Home</button>
         </Link>
