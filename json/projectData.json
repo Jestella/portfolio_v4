@@ -73,18 +73,6 @@
   },
   {
     "id": 7,
-    "title": "A Word A Day",
-    "year": "2021",
-    "sub": "Dictionary app built with React",
-    "technologies": "React",
-    "imageUrl": "https://user-images.githubusercontent.com/31642902/115822845-3c4c6a80-a3d3-11eb-99b9-26000754774f.png",
-    "liveDemo": "https://jestella.github.io/AWAD/",
-    "gitHub": "https://github.com/Jestella/AWAD",
-    "description1": "A dictionary app for those who want to learn multiple languages at once.",
-    "description2": "How to use (4-steps): 1). Input a new word 2). Add a sample sentence 3). Provide definition of the new word 4). Click pencil icon to create a new note."
-  },
-  {
-    "id": 8,
     "title": "Blog, Story",
     "year": "2020",
     "sub": "Blog website built with EJS templatting language",

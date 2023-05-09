@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
 
-import Button from '../components/Button';
 import DevlogItems from '../components/DevlogItems';
 
 const Devlog = () => {
@@ -9,8 +8,10 @@ const Devlog = () => {
     <div className='devlog'>
       <Navbar />
       <div className='devlog-container'>
-        <h1 className='center'>2022</h1>
-        <DevlogItems />
+        <div className='devlog'>
+          <h2 className='center'>Work & Study Log</h2>
+          <DevlogItems />
+        </div>
       </div>
     </div>
   );

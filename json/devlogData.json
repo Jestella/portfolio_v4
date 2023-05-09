@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "month": "January",
+    "month": "Jan 2022",
     "title": "Data Structures & Algorithms",
     "sub": "Completed the Udemy course [Master the Coding Interview: Data Strucrues + Algorithms]",
     "linkUrl": "https://www.udemy.com/certificate/UC-61c4a8ac-bf1c-4d72-b634-2e002328994c/",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "month": "February",
+    "month": "Feb 2022",
     "title": "Next.js",
     "sub": "Learned Next.js from scratch and created my first Next.js application with Next.js tutorial",
     "linkUrl": "https://github.com/Jestella/nextjs-blog",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "month": "March",
+    "month": "Mar 2022",
     "title": "Next.js",
     "sub": "Built a restaurant website with Next.js",
     "linkUrl": "https://bistrolee-jestella.vercel.app/",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "month": "April",
+    "month": "Apr 2022",
     "title": "MERN Project",
     "sub": "Built a CRUD API web application with MongoDB, Express, React and Node.js",
     "linkUrl": "https://github.com/Jestella/mern2",
@@ -34,7 +34,7 @@
 
   {
     "id": 5,
-    "month": "July",
+    "month": "Jul 2022",
     "title": "Creative Coding with JavaScript",
     "sub": "Made visuals with JavaScript",
     "linkUrl": "https://youtube.com/shorts/TZWnCKpQenY?feature=share",
@@ -42,18 +42,42 @@
   },
   {
     "id": 6,
-    "month": "August & September",
+    "month": "Aug & Sep 2022",
     "title": "WordPress",
-    "sub": "Built a WordPress website for a small business owner",
+    "sub": "Built a WordPress website for a small business",
     "linkUrl": "https://skinlabmedispa.com",
     "link": "Spa Website"
   },
   {
     "id": 7,
-    "month": "October",
+    "month": "Nov 2022 - Present",
     "title": "Shopify",
-    "sub": "Building a Shopify website for a small business owner",
+    "sub": "Building a Shopify website for a small business",
     "linkUrl": " ",
     "link": "Coming soon"
+  },
+  {
+    "id": 8,
+    "month": "Apr 2023",
+    "title": "WordPress",
+    "sub": "Built a WordPress website for a small business",
+    "linkUrl": "https://nbbeautystudio.com/",
+    "link": "Beauty Studio"
+  },
+  {
+    "id": 9,
+    "month": "May 2023",
+    "title": "Angular",
+    "sub": "Learning Angular and builiding my first Angular mobile application",
+    "linkUrl": "Coming Soon",
+    "link": "Mobile App"
+  },
+  {
+    "id": 10,
+    "month": "May 2023",
+    "title": "React",
+    "sub": "Working on a React project for a studio",
+    "linkUrl": "Coming Soon",
+    "link": "Recording Studio"
   }
 ]

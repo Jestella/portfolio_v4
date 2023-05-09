@@ -38,7 +38,7 @@ export default function Home({}) {
         <div className='about'>
           <SectionTitle>about</SectionTitle>
 
-          <div className='about_container'>
+          <div className='about-container'>
             <h1>
               Hello, I&apos;m Stella!&nbsp;
               <Image
@@ -137,7 +137,7 @@ export default function Home({}) {
 
         <div className='home-devlog-container'>
           <h2>💻</h2>
-          <p>What I learned & built this month.</p>
+          <p>What I am learning & building this month.</p>
           <div className='center'>
             <button className='dev-btn'>
               <Link href='/devlog'>More</Link>
