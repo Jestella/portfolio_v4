@@ -2,7 +2,7 @@ import { FaGithub, FaEnvelope, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <footer>
       <div className='footer-container'>
         <p className='footer-message'>I love coffee chats!</p>
 
@@ -39,7 +39,7 @@ const Footer = () => {
 
         <p className='copyright'>© STELLA LEE {new Date().getFullYear()}</p>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -44,6 +44,25 @@ li {
   line-height: 1.4;
 }
 
+.btn:hover,
+.span:hover {
+  transition: 0.2s ease-in-out;
+}
+
+.btn {
+  background-color: inherit;
+  color: var(--color-yellow);
+  border: 1px solid var(--color-yellow);
+  width: 86px;
+  height: 30px;
+  font-size: 15px;
+
+  &:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+  }
+}
+
 .logo {
   height: 1em;
   margin-left: 0.5rem;
@@ -126,52 +145,26 @@ li {
   .custom-button {
     margin: 0;
   }
-
-  @media screen and (max-width: 1373px) {
-  }
-
-  @media screen and (max-width: 799px) {
-    img {
-      width: 600px;
-      height: 260px;
-    }
-
-    .card-text {
-      width: 500px;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
-    img {
-      width: 400px;
-      height: 260px;
-    }
-
-    .card-text {
-      width: 400px;
-    }
-  }
 }
-
 /* navbar */
 
-.navbar {
+nav {
   width: 100%;
   height: 70px;
   cursor: pointer;
   color: var(--color-black);
-}
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 26px;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  top: 0;
-  letter-spacing: 3px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 26px 14px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    letter-spacing: 3px;
+  }
 }
 
 .nav-links {
@@ -248,20 +241,6 @@ li {
   padding: 175px;
   margin: 30px 5px;
   font-family: 'Roboto', sans-serif;
-
-  @media screen and (max-width: 799px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 40px 50%;
-    margin: 20px 0;
-  }
-}
-
-.main-image {
-  @media screen and (max-width: 799px) {
-    justify-self: center;
-    margin-bottom: 20px;
-  }
 }
 
 .profile-image {
@@ -270,19 +249,8 @@ li {
   border-radius: 150%;
 
   &:hover {
-    // box-shadow: 0 1px 20px #595260;
     transition: 0.1.5s ease-in-out;
     opacity: 90%;
-  }
-
-  @media screen and (max-width: 1150px) {
-    width: 200px;
-    height: 200px;
-  }
-
-  @media screen and (max-width: 799px) {
-    width: 140px;
-    height: 140px;
   }
 }
 
@@ -302,25 +270,6 @@ li {
 
   .gray3 {
     color: #cecbcb;
-  }
-
-  @media screen and (max-width: 1150px) {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  @media screen and (max-width: 1004px) {
-    font-size: 28px;
-    line-height: 33px;
-  }
-
-  @media screen and (max-width: 799px) {
-    font-size: 30px;
-    margin: 0;
-    padding: 0 3%;
-    line-height: 34px;
-    width: 100vw;
-    margin-left: 5%;
   }
 }
 
@@ -421,11 +370,6 @@ li {
 .section-title {
   color: var(--color-gray-light);
   margin: 0 0 -20px 30px;
-
-  @media screen and (max-width: 799px) {
-    text-align: center;
-    margin: 20px 12px 30px;
-  }
 }
 
 /* home - about */
@@ -459,15 +403,6 @@ li {
   span {
     color: var(--color-yellow);
   }
-
-  @media screen and (max-width: 799px) {
-    margin: 12px;
-    text-align: center;
-
-    h1 {
-      font-size: 36px;
-    }
-  }
 }
 
 /* home - skills */
@@ -475,19 +410,9 @@ li {
 .skills-container {
   margin: 100px 60px;
 
-  @media screen and (max-width: 799px) {
-    margin-left: 0;
-  }
-
   ul {
     display: flex;
     justify-content: space-between;
-
-    @media screen and (max-width: 799px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 20px;
-    }
 
     li {
       font-size: 42px;
@@ -518,10 +443,6 @@ li {
 .home-project-container {
   padding: 40px 0;
   margin: 0 90px;
-
-  @media screen and (max-width: 799px) {
-    padding: 0 0 50px;
-  }
 }
 
 .project-btns Button {
@@ -541,7 +462,7 @@ li {
 /* home - devlog */
 .home-devlog {
   padding: 30px 0 100px;
-  background-color: var(--color-pink-light);
+  background-color: var(--color-pink-dark);
   background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
 }
 
@@ -553,15 +474,6 @@ li {
     font-family: 'Shadows Into Light', cursive;
     font-size: 50px;
     padding: 50px 0 0;
-
-    @media screen and (max-width: 799px) {
-      font-size: 36px;
-      padding: 50px 0 0;
-    }
-  }
-
-  @media screen and (max-width: 799px) {
-    padding: 0 0 50px;
   }
 }
 
@@ -600,15 +512,6 @@ li {
     font-family: 'Shadows Into Light', cursive;
     font-size: 50px;
     padding: 50px 0 0;
-
-    @media screen and (max-width: 799px) {
-      font-size: 36px;
-      padding: 50px 0 0;
-    }
-  }
-
-  @media screen and (max-width: 799px) {
-    padding: 0 0 50px;
   }
 }
 
@@ -659,31 +562,19 @@ li {
   padding: 100px 0;
 }
 
-.about_container {
+.about-container {
   padding: 0 0 80px;
   margin: 0 90px;
-
-  @media screen and (max-width: 799px) {
-    margin: 12px;
-  }
 
   h1 {
     padding: 0 0 10px;
     font-size: 50px;
     font-family: 'Shadows Into Light', cursive;
-
-    @media screen and (max-width: 799px) {
-      font-size: 36px;
-    }
   }
 
   .Memoji {
     width: 50px;
     height: 50px;
-  }
-
-  h3 {
-    padding: 40px 0 6px 0;
   }
 
   p {
@@ -707,12 +598,6 @@ li {
   display: flex;
   justify-content: left;
   margin: 20px 90px 130px 90px;
-
-  @media screen and (max-width: 799px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0;
-  }
 }
 
 .project-name {
@@ -720,21 +605,11 @@ li {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
-
-  @media screen and (max-width: 799px) {
-    text-align: center;
-    margin: 60px 0 20px 0;
-  }
 }
 
 .project-image-container {
   img {
     width: 460px;
-
-    @media screen and (max-width: 799px) {
-      width: 100vw;
-      padding: 10px;
-    }
   }
 }
 
@@ -760,13 +635,6 @@ li {
   Button {
     margin: 0 3px;
   }
-
-  @media screen and (max-width: 799px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 95%;
-    margin: 12px;
-  }
 }
 
 /* devlog page */
@@ -774,7 +642,6 @@ li {
 .devlog {
   background-color: var(--color-pink-dark);
   padding: 30px 0;
-  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
 }
 
 .devlog-container {
@@ -817,12 +684,6 @@ li {
   }
 }
 
-@media screen and (max-width: 799px) {
-  .devlog-container {
-    margin: 0 20px;
-  }
-}
-
 /* lab page */
 
 .lab {
@@ -859,7 +720,7 @@ li {
 
 /* footer */
 
-.footer {
+footer {
   height: 220px;
   background-color: var(--color-black);
 }
@@ -868,7 +729,7 @@ li {
   font-size: 17px;
 }
 
-.footer a {
+footer a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -917,56 +778,166 @@ li {
   color: var(--color-gray-dark);
 }
 
-/* @media - must fix! */
+/* @media */
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1024px) {
+  /* navbar */
   .nav-links {
     display: none;
   }
   .nav-menu {
     display: flex;
   }
+
+  /* main */
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .main-content {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 767px) {
+  /* navbar */
+  .nav-right {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+  }
+
   .button {
     font-size: 13px;
     width: 90px;
   }
 
-  .nav-right {
-    display: none;
+  /* main */
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px 50%;
+    margin: 20px 0;
   }
 
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 14px;
+  .main-image {
+    @media screen and (max-width: 799px) {
+      justify-self: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .main-content {
+    font-size: 30px;
+    margin: 0;
+    padding: 0 3%;
+    line-height: 34px;
+    width: 100vw;
+    margin-left: 5%;
+  }
+
+  /* section title */
+  .section-title {
+    text-align: center;
+    margin: 20px 12px 30px;
+  }
+
+  /* card */
+  .cards img {
+    width: 400px;
+    height: 260px;
+  }
+
+  .card-text {
+    width: 400px;
+  }
+
+  /* home - about */
+
+  .about-container span {
+    margin: 12px;
+    text-align: center;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  .skills-container {
+    margin-left: 0;
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+  }
+
+  .home-project-container {
+    padding: 0 0 50px;
+  }
+
+  .home-devlog-container {
+    padding: 0 0 50px;
+  }
+
+  h1 {
+    font-size: 36px;
+    padding: 50px 0 0;
+  }
+
+  .home-lab-container {
+    padding: 0 0 50px;
+
+    h1 {
+      font-size: 36px;
+      padding: 50px 0 0;
+    }
+  }
+
+  .about-container {
+    margin: 12px;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .project-name {
+    text-align: center;
+    margin: 60px 0 20px 0;
+  }
+
+  .project-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 12px;
+
+    img {
+      width: 100vw;
+      padding: 10px;
+    }
+  }
+
+  .devlog-container {
+    margin: 0 20px;
   }
 }
-
-/* Responsive Styles - 2023 standard */
-// @media screen and (min-width: 576px) {
-//   .container {
-//     max-width: 540px;
-//   }
-
-// }
-
-// @media screen and (min-width: 768px) {
-//   .container {
-//     max-width: 720px;
-//   }
-// }
-
-// @media screen and (min-width: 992px) {
-//   .container {
-//     max-width: 960px;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .container {
-//     max-width: 1140px;
-//   }
-// }

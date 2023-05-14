@@ -139,9 +139,9 @@ export default function Home({}) {
           <h2>💻</h2>
           <p>What I am learning & building this month.</p>
           <div className='center'>
-            <button className='dev-btn'>
+            <Button className='dev-btn'>
               <Link href='/devlog'>More</Link>
-            </button>
+            </Button>
           </div>
         </div>
       </div>

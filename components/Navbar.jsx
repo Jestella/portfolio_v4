@@ -4,47 +4,48 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import Menu from './Menu';
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+
   return (
-    <div className='navbar'>
-      <div className='nav'>
-        <div>
+    <nav>
+      <ul>
+        {/* Logo on the left */}
+        <li>
           <Link href='/'>
             <div className='nav-item nav-left'>JE.</div>
           </Link>
-        </div>
-        <div className='nav-links'>
+        </li>
+        <li className='nav-links'>
           <Menu />
-        </div>
-        <div>
+        </li>
+
+        {/* Text on the right */}
+        <li>
           <Link href='/'>
             <span className='nav-item nav-right'>STELLA</span>
           </Link>
-        </div>
-        <div className='nav-menu'>
-          {toggleMenu ? (
-            <FaTimes
-              color='#fddb3a'
-              size={23}
-              onClick={() => setToggleMenu(false)}
-            />
+
+          {/* Mobile menu button and menu */}
+        </li>
+        <li className='nav-menu'>
+          {isMobileMenuOpen ? (
+            <FaTimes color='#fddb3a' size={23} onClick={toggleMobileMenu} />
           ) : (
-            <FaBars
-              color='#fddb3a'
-              size={23}
-              onClick={() => setToggleMenu(true)}
-            />
+            <FaBars color='#fddb3a' size={23} onClick={toggleMobileMenu} />
           )}
-          {toggleMenu && (
+
+          {/* Mobile menu */}
+          {isMobileMenuOpen && (
             <div className='nav-menu-mobile'>
               <div className='nav-menu-mobile-links'>
                 <Menu />
               </div>
             </div>
           )}
-        </div>
-      </div>
-    </div>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
