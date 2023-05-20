@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
 import Navbar from './Navbar';
 
 import profileImage from '../public/src/assets/images/profile.jpeg';
@@ -9,13 +11,15 @@ const Main = () => {
       <Navbar />
       <div className='main'>
         <div className='main-image'>
-          <Image
-            src={profileImage}
-            width={250}
-            height={250}
-            alt='Stella Lee'
-            className='profile-image'
-          />
+          <Link href='/about'>
+            <Image
+              src={profileImage}
+              width={250}
+              height={250}
+              alt='Stella Lee'
+              className='profile-image'
+            />
+          </Link>
         </div>
         <div className='main-content'>
           <span>Stella Lee</span>
@@ -24,11 +28,11 @@ const Main = () => {
           <br />
           <span>based in Toronto,</span>
           <br />
-          <span className='gray1'>who loves everything</span>
+          <span className='gradient-text'>who loves everything</span>
           <br />
-          <span className='gray2'>that has to do with</span>
+          <span className='gradient-text'>that has to do with</span>
           <br />
-          <span className='gray3'>art, design & technology.</span>
+          <span className='gradient-text'>art, design & technology.</span>
         </div>
       </div>
     </div>

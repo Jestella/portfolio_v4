@@ -7,16 +7,9 @@
     "linkUrl": "https://www.udemy.com/certificate/UC-61c4a8ac-bf1c-4d72-b634-2e002328994c/",
     "link": "Certificate of Completion"
   },
+
   {
     "id": 2,
-    "month": "Feb 2022",
-    "title": "Next.js",
-    "sub": "Learned Next.js from scratch and created my first Next.js application with Next.js tutorial",
-    "linkUrl": "https://github.com/Jestella/nextjs-blog",
-    "link": "Github Repository"
-  },
-  {
-    "id": 3,
     "month": "Mar 2022",
     "title": "Next.js",
     "sub": "Built a restaurant website with Next.js",
@@ -24,7 +17,7 @@
     "link": "Live Demo"
   },
   {
-    "id": 4,
+    "id": 3,
     "month": "Apr 2022",
     "title": "MERN Project",
     "sub": "Built a CRUD API web application with MongoDB, Express, React and Node.js",
@@ -33,7 +26,7 @@
   },
 
   {
-    "id": 5,
+    "id": 4,
     "month": "Jul 2022",
     "title": "Creative Coding with JavaScript",
     "sub": "Made visuals with JavaScript",
@@ -41,10 +34,10 @@
     "link": "Output1"
   },
   {
-    "id": 6,
+    "id": 5,
     "month": "Aug & Sep 2022",
     "title": "WordPress",
-    "sub": "Built a WordPress website for a small business",
+    "sub": "Built a WordPress website for a beauty clinic",
     "linkUrl": "https://skinlabmedispa.com",
     "link": "Spa Website"
   },
@@ -52,29 +45,29 @@
     "id": 7,
     "month": "Nov 2022 - Present",
     "title": "Shopify",
-    "sub": "Building a Shopify website for a small business",
+    "sub": "Building a Shopify e-commerce store for a small business ",
     "linkUrl": " ",
     "link": "Coming soon"
   },
   {
-    "id": 8,
+    "id": 6,
     "month": "Apr 2023",
     "title": "WordPress",
-    "sub": "Built a WordPress website for a small business",
+    "sub": "Built a simple WordPress website for a beauty studio",
     "linkUrl": "https://nbbeautystudio.com/",
     "link": "Beauty Studio"
   },
   {
-    "id": 9,
-    "month": "May 2023",
+    "id": 7,
+    "month": "May 2023 - Present",
     "title": "Angular",
     "sub": "Learning Angular and builiding my first Angular mobile application",
     "linkUrl": "Coming Soon",
     "link": "Mobile App"
   },
   {
-    "id": 10,
-    "month": "May 2023",
+    "id": 8,
+    "month": "May 2023 - Present",
     "title": "React",
     "sub": "Working on a React project for a studio",
     "linkUrl": "Coming Soon",

@@ -30,9 +30,9 @@ const Navbar = () => {
         </li>
         <li className='nav-menu'>
           {isMobileMenuOpen ? (
-            <FaTimes color='#fddb3a' size={23} onClick={toggleMobileMenu} />
+            <FaTimes color='#d4d772' size={23} onClick={toggleMobileMenu} />
           ) : (
-            <FaBars color='#fddb3a' size={23} onClick={toggleMobileMenu} />
+            <FaBars color='#d4d772' size={23} onClick={toggleMobileMenu} />
           )}
 
           {/* Mobile menu */}

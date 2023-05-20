@@ -33,7 +33,11 @@ const PortfolioItems = () => {
               layout='fill'
             ></Image> */}
                 <picture>
-                  <img src={imageUrl} alt='Project image' />
+                  <img
+                    src={imageUrl}
+                    alt='Project image'
+                    style={{ borderRadius: '20px' }}
+                  />
                 </picture>
               </div>
               <div className='project-content-container'>
@@ -42,7 +46,7 @@ const PortfolioItems = () => {
                 <div className='project-btn'>
                   <Button>
                     <a href={liveDemo} target='_blank' rel='noreferrer'>
-                      live demo
+                      live
                     </a>
                   </Button>
                   <Button>

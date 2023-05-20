@@ -9,7 +9,11 @@ const ProjectPreview = () => {
           <div className='card-img'>
             {/* <Image src={imageUrl} alt='project image' layout='fill'></Image> */}
             <picture>
-              <img src={imageUrl} alt='Project image' />
+              <img
+                src={imageUrl}
+                alt='Project image'
+                style={{ borderRadius: '20px' }}
+              />
             </picture>
           </div>
           <div className='card-text'>

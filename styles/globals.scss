@@ -6,12 +6,13 @@
 :root {
   --font-family: 'Roboto', sans-serif;
   --color-black: #262626;
-  --color-gray-light: #d3d3d3;
+  --color-gray-light: #aaa6a6;
   --color-gray-dark: #767474;
   --color-yellow: #fddb3a;
-  --color-pink-dark: #ffb2bc;
+  --color-pink-dark: #fbc6c6;
   --color-pink-light: #ffeded;
-  --color-green-dark: #283c3d;
+  --color-green-light: #d4d772;
+  --color-navy-dark: #03021e;
   --color-text: #2e2424;
 }
 
@@ -22,10 +23,11 @@ body {
   font-family: var(--font-family);
   background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
   color: var(--color-text);
+  overscroll-behavior-x: none;
 }
 
 body ::selection {
-  color: var(--color-yellow);
+  color: var(--color-green-light);
   background: #000;
 }
 
@@ -55,14 +57,14 @@ input {
 
 .btn {
   background-color: inherit;
-  color: var(--color-yellow);
-  border: 1px solid var(--color-yellow);
+  color: var(--color-green-light);
+  border: 1px solid var(--color-green-light);
   width: 86px;
   height: 30px;
   font-size: 15px;
 
   &:hover {
-    background-color: var(--color-yellow);
+    background-color: var(--color-green-light);
     color: var(--color-black);
   }
 }
@@ -108,6 +110,12 @@ input {
   font-size: 1.5rem;
 }
 
+.gradient-text {
+  background: -webkit-linear-gradient(#d1cfcf, #9a9999);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* card */
 .cards {
   display: flex;
@@ -151,11 +159,6 @@ input {
   }
 }
 
-/* layout */
-.layout {
-  width: 100vw;
-}
-
 /* navbar */
 
 nav {
@@ -189,7 +192,7 @@ nav {
   margin: 0 30px;
 
   &:hover {
-    color: var(--color-yellow);
+    color: var(--color-green-light);
   }
 }
 
@@ -200,7 +203,7 @@ nav {
 
   &:hover {
     -webkit-text-stroke: 0;
-    color: var(--color-yellow);
+    color: var(--color-green-light);
     text-shadow: none;
   }
 }
@@ -221,22 +224,24 @@ nav {
 
 .nav-menu-mobile {
   position: absolute;
-  top: 34px;
+  top: 30px;
   right: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: right;
   flex-direction: column;
-  text-align: right;
-  background-color: var(--color-yellow);
-  width: 300px;
+  text-align: center;
+  background-color: var(--color-green-light);
+  width: 100vw;
   margin-top: 1rem;
-  padding: 2rem 0;
+  padding: 20px;
   font-size: 14px;
+  opacity: 85%;
 }
 
 .nav-menu-mobile p {
   margin: 1rem 0;
+  font-weight: 400;
 }
 
 /* home - main */
@@ -257,6 +262,7 @@ nav {
   padding: 2px;
   background-color: var(--color-black);
   border-radius: 150%;
+  cursor: pointer;
 
   &:hover {
     transition: 0.1.5s ease-in-out;
@@ -269,18 +275,6 @@ nav {
   font-size: 36px;
   font-weight: 600;
   line-height: 42px;
-
-  .gray1 {
-    color: var(--color-gray-dark);
-  }
-
-  .gray2 {
-    color: #aeabab;
-  }
-
-  .gray3 {
-    color: #cecbcb;
-  }
 }
 
 /* home - responsive icons */
@@ -378,47 +372,13 @@ nav {
 }
 
 .section-title {
-  color: var(--color-gray-light);
   margin: 0 0 -20px 30px;
-}
-
-/* home - about */
-
-.about {
-  color: #fff;
-  background-color: var(--color-black);
-  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
-  padding: 30px 0;
-}
-
-.about-container {
-  padding: 0 0 80px;
-  margin: 0 90px;
-
-  h1 {
-    padding: 0 0 26px;
-    font-size: 3rem;
-    font-family: 'Shadows Into Light', cursive;
-  }
-
-  h3 {
-    padding: 40px 0 10px 0;
-  }
-
-  p {
-    font-size: 19px;
-    font-weight: 200;
-  }
-
-  span {
-    color: var(--color-yellow);
-  }
 }
 
 /* home - skills */
 
 .skills-container {
-  margin: 100px 60px;
+  margin: 100px 50px;
 
   ul {
     display: flex;
@@ -469,14 +429,21 @@ nav {
   text-align: center;
 }
 
+/*home - devlog & lab */
+.home-devlog-lab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* home - devlog */
 .home-devlog {
   padding: 30px 0 100px;
   background-color: var(--color-pink-dark);
-  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+  flex-basis: calc(50%);
 }
 
-.home-devlog-container {
+.home-devlog-container,
+.home-lab-container {
   text-align: center;
   padding: 50px 0;
 
@@ -489,14 +456,14 @@ nav {
 
 .dev-btn {
   background-color: inherit;
-  color: var(--color-pink-dark);
-  border: 1px solid var(--color-pink-dark);
+  color: var(--color-grey-dark);
+  border: 1px solid var(--color-gray-dark);
   width: 86px;
   height: 30px;
   font-size: 15px;
 
   &:hover {
-    background-color: var(--color-pink-dark);
+    background-color: var(--color-gray-dark);
     color: var(--color-black);
   }
 }
@@ -509,32 +476,14 @@ nav {
 /* home - lab */
 .home-lab {
   padding: 30px 0 100px;
-  background-color: var(--color-green-dark);
+  flex-basis: calc(50%);
+  background-color: var(--color-green-light);
   color: #fff;
-  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
-}
-
-.home-lab-container {
-  text-align: center;
-  padding: 50px 0;
-
-  h1 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 50px;
-    padding: 50px 0 0;
-  }
 }
 
 .center {
   margin: 30px 0 50px;
   text-align: center;
-}
-
-/* home - blog */
-
-.home-blog {
-  background-color: #dae9cb;
-  padding: 100px 0;
 }
 
 /* fixed icons */
@@ -567,8 +516,8 @@ nav {
 
 .about {
   color: #fff;
-  background-color: #262626;
-  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+  background-color: var(--color-black);
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
   padding: 100px 0;
 }
 
@@ -587,8 +536,17 @@ nav {
     height: 50px;
   }
 
+  h3 {
+    padding: 40px 0 10px 0;
+  }
+
   p {
     font-size: 19px;
+    font-weight: 200;
+  }
+  span {
+    color: var(--color-green-light);
+    font-weight: 500;
   }
 }
 
@@ -596,6 +554,7 @@ nav {
 
 .portfolio {
   background: var(--color-black);
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
   color: var(--color-gray-light);
 }
 
@@ -613,11 +572,15 @@ nav {
 .project-name {
   margin-left: 100px;
   font-size: 20px;
-  font-weight: 700;
-  color: #fff;
+  font-weight: 400;
+  color: var(--color-pink-light);
 }
 
 .project-image-container {
+  picture {
+    border-radius: 10px;
+  }
+
   img {
     width: 460px;
   }
@@ -628,7 +591,7 @@ nav {
   margin-left: 40px;
 
   .project-technologies {
-    color: #ffe268;
+    color: var(--color-green-light);
     font-weight: 400;
   }
 
@@ -694,38 +657,36 @@ nav {
   }
 }
 
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+
+  button {
+    margin-left: 5px;
+  }
+}
+
+.search-bar {
+  width: 300px;
+  height: 30px;
+  background-color: #f4f4f4;
+  border: none;
+}
+
 /* lab page */
 
 .lab {
-  background-color: var(--color-green-dark);
+  background-color: var(--color-green-light);
   color: #fff;
   padding: 200px 0 250px;
-  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
 }
 
 .lab-container {
   padding: 80px 0 100px;
   margin: 0 80px;
   text-align: center;
-}
-
-/* blog page */
-
-.article {
-  color: var(--color-black);
-  background-color: #dae9cb;
-  background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
-  padding: 100px 0;
-}
-
-.article-container {
-  padding: 0 0 80px;
-  margin: 0 90px;
-
-  p {
-    padding: 100px 0;
-    font-size: 1.1rem;
-  }
 }
 
 /* footer */
@@ -768,7 +729,7 @@ footer a {
 
   &:hover {
     transition: 0.2s ease-in-out;
-    background-color: var(--color-yellow);
+    background-color: var(--color-green-light);
     color: #2626;
   }
 }
@@ -788,7 +749,14 @@ footer a {
   color: var(--color-gray-dark);
 }
 
-/* @media */
+/* responsive */
+
+@media screen and (max-width: 1082px) {
+  .main-content {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   /* navbar */
@@ -803,20 +771,33 @@ footer a {
     width: 100vw;
   }
 
-  /* main */
-  .profile-image {
-    width: 200px;
-    height: 200px;
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px auto;
+    margin: 20px 0;
+  }
+
+  .main-image {
+    justify-self: center;
+    margin-bottom: 40px;
   }
 
   .main-content {
     font-size: 30px;
-    line-height: 40px;
+    margin: 0;
+    text-align: center;
+    line-height: 34px;
+    width: 100vw;
+  }
+
+  .home-devlog,
+  .home-lab {
+    flex-basis: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* navbar */
   .nav-right {
     display: none;
   }
@@ -836,7 +817,6 @@ footer a {
     width: 100vw;
   }
 
-  /* main */
   .main {
     display: grid;
     grid-template-columns: 1fr;
@@ -845,10 +825,8 @@ footer a {
   }
 
   .main-image {
-    @media screen and (max-width: 799px) {
-      justify-self: center;
-      margin-bottom: 20px;
-    }
+    justify-self: center;
+    margin-bottom: 40px;
   }
 
   .profile-image {
@@ -857,31 +835,29 @@ footer a {
   }
 
   .main-content {
-    font-size: 30px;
+    font-size: 28px;
     margin: 0;
     padding: 0 3%;
     line-height: 34px;
     width: 100vw;
-    margin-left: 5%;
+    margin-left: 10vw;
+    text-align: left;
   }
 
-  /* section title */
   .section-title {
     text-align: center;
     margin: 20px 12px 30px;
   }
 
-  /* card */
+  /* project-preview-card */
   .cards img {
-    width: 400px;
-    height: 260px;
+    width: 90vw;
+    height: auto;
   }
 
   .card-text {
     width: 400px;
   }
-
-  /* home - about */
 
   .about-container span {
     margin: 12px;
@@ -893,7 +869,7 @@ footer a {
   }
 
   .skills-container {
-    margin-left: 0;
+    margin-left: 20px;
 
     ul {
       display: grid;
@@ -906,22 +882,14 @@ footer a {
     padding: 0 0 50px;
   }
 
-  .home-devlog-container {
+  .home-devlog-container,
+  .home-lab-container {
     padding: 0 0 50px;
   }
 
   h1 {
     font-size: 36px;
     padding: 50px 0 0;
-  }
-
-  .home-lab-container {
-    padding: 0 0 50px;
-
-    h1 {
-      font-size: 36px;
-      padding: 50px 0 0;
-    }
   }
 
   .about-container {
@@ -957,6 +925,10 @@ footer a {
 
   .devlog-container {
     margin: 0 20px;
+  }
+
+  .portfolio-container {
+    padding: 0;
   }
 
   .project-content-container {

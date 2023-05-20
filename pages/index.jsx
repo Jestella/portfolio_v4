@@ -6,7 +6,6 @@ import Main from '../components/Main';
 import Button from '../components/Button';
 import ResponsiveIcons from '../components/ResponsiveIcons';
 import ProjectPreview from '../components/ProjectPreview';
-import LabPreview from '../components/LabPreview';
 
 import { server } from '../config';
 
@@ -27,157 +26,108 @@ import memoji from '../public/src/assets/images/memoji.png';
 export default function Home({}) {
   return (
     <>
-      <div>
-        <div className='home'>
-          <ResponsiveIcons />
-          <Main />
+      <section className='home'>
+        <ResponsiveIcons />
+        <Main />
+      </section>
+
+      <section className='home-project'>
+        <SectionTitle>project</SectionTitle>
+        <div className='home-project-container'>
+          <p>These are some of my recent projects.</p>
+          <ProjectPreview />
         </div>
-      </div>
+      </section>
 
-      <div>
-        <div className='about'>
-          <SectionTitle>about</SectionTitle>
-
-          <div className='about-container'>
-            <h1>
-              Hello, I&apos;m Stella!&nbsp;
+      <section className='skills'>
+        <SectionTitle>skills</SectionTitle>
+        <div className='skills-container'>
+          <ul>
+            <li>
+              <FaReact color='#1cc5dc' />
+              <p>React</p>
+            </li>
+            <li>
               <Image
-                src={memoji}
-                width={60}
-                height={60}
-                alt='memoji'
-                className='Memoji'
+                src={nextjs}
+                width={40}
+                height={40}
+                alt='nextjs'
+                className='sass'
               />
-            </h1>
-            <p>
-              Currently looking for a new client & full-time job opportunity.
-              Click to learn more about me. &nbsp;
-              <Button>
-                <Link href='/about'>More</Link>
-              </Button>
-            </p>
-          </div>
+              <p>Next.js</p>
+            </li>
+            <li>
+              <FaNodeJs color='#4aa96c' />
+              <p>Node.js</p>
+            </li>
+            <li>
+              <Image
+                src={typescript}
+                width={40}
+                height={40}
+                alt='typescript'
+                className='typescript'
+              />
+              <p>TypeScript</p>
+            </li>
+            <li>
+              <FaJs color='#fdca40' />
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <Image
+                src={sass}
+                width={40}
+                height={40}
+                alt='sass'
+                className='sass'
+              />
+              <p>Sass</p>
+            </li>
+            <li>
+              <FaBootstrap color='#542e71' />
+              <p>Bootstrap</p>
+            </li>
+            <li>
+              <FaCss3Alt color='#2978b5' />
+              <p>CSS3</p>
+            </li>
+            <li>
+              <FaHtml5 color='#ff5200' />
+              <p>HTML5</p>
+            </li>
+          </ul>
         </div>
+      </section>
 
-        <div className='skills'>
-          <SectionTitle>skills</SectionTitle>
-
-          <div className='skills-container'>
-            <ul>
-              <li>
-                <FaReact color='#1cc5dc' />
-                <p>React</p>
-              </li>
-              <li>
-                <Image
-                  src={nextjs}
-                  width={40}
-                  height={40}
-                  alt='nextjs'
-                  className='sass'
-                />
-                <p>Next.js</p>
-              </li>
-              <li>
-                <FaNodeJs color='#4aa96c' />
-                <p>Node.js</p>
-              </li>
-              <li>
-                <Image
-                  src={typescript}
-                  width={40}
-                  height={40}
-                  alt='typescript'
-                  className='typescript'
-                />
-                <p>TypeScript</p>
-              </li>
-              <li>
-                <FaJs color='#fdca40' />
-                <p>JavaScript</p>
-              </li>
-              <li>
-                <Image
-                  src={sass}
-                  width={40}
-                  height={40}
-                  alt='sass'
-                  className='sass'
-                />
-                <p>Sass</p>
-              </li>
-              <li>
-                <FaBootstrap color='#542e71' />
-                <p>Bootstrap</p>
-              </li>
-              <li>
-                <FaCss3Alt color='#2978b5' />
-                <p>CSS3</p>
-              </li>
-              <li>
-                <FaHtml5 color='#ff5200' />
-                <p>HTML5</p>
-              </li>
-            </ul>
+      <div className='home-devlog-lab'>
+        <section className='home-devlog'>
+          <SectionTitle>devlog</SectionTitle>
+          <div className='home-devlog-container'>
+            <h2>💻</h2>
+            <p>What I learn & build each month.</p>
+            <div className='center'>
+              <button className='dev-btn'>
+                <Link href='/devlog'>More</Link>
+              </button>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <section className='home-lab'>
+          <SectionTitle>lab</SectionTitle>
+          <div className='home-lab-container'>
+            <h2>💡</h2>
+            <p>Random Experiments.</p>
+            <div className='center'>
+              <button className='dev-btn'>
+                <Link href='/lab'>More</Link>
+              </button>{' '}
+            </div>
+          </div>
+        </section>
       </div>
-
-      <div>
-        <div className='home-project'>
-          <SectionTitle>project</SectionTitle>
-          <div className='home-project-container'>
-            <p>These are some of my recent projects.</p>
-            <ProjectPreview />
-          </div>
-        </div>
-      </div>
-      <div className='home-devlog'>
-        <SectionTitle>devlog</SectionTitle>
-
-        <div className='home-devlog-container'>
-          <h2>💻</h2>
-          <p>What I am learning & building this month.</p>
-          <div className='center'>
-            <Button className='dev-btn'>
-              <Link href='/devlog'>More</Link>
-            </Button>
-          </div>
-        </div>
-      </div>
-      <div className='home-lab'>
-        <SectionTitle>lab</SectionTitle>
-
-        <div className='home-lab-container'>
-          <h2>💡</h2>
-          <LabPreview />
-
-          <div className='center'>
-            <button className='dev-btn'>
-              <Link href='/lab'>More</Link>
-            </button>{' '}
-          </div>
-        </div>
-      </div>
-
-      {/* <div className='home-blog'>
-        <SectionTitle>blog</SectionTitle>
-
-        <div className='home-blog-container'>
-          <BlogPreview posts={posts} />
-        </div>
-      </div> */}
     </>
   );
 }
-
-// export const getStaticProps = async () => {
-//   const res = await fetch(`${server}/api/posts`);
-//   const posts = await res.json();
-
-//   return {
-//     props: {
-//       posts,
-//     },
-//   };
-// };

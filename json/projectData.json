@@ -4,12 +4,12 @@
     "title": "Portfolio",
     "year": "2022",
     "sub": "Personal portfolio website",
-    "technologies": "React, Sass",
+    "technologies": "Next.js, Sass",
     "imageUrl": "https://user-images.githubusercontent.com/31642902/153725838-7d250f4b-0c86-4ced-92ea-e2702f809eba.png",
     "liveDemo": "https://stella-lee.com",
     "gitHub": "https://github.com/Jestella/portfolio_v3",
-    "description1": "Updated an existing portfolio with React (React Hooks, i18next for the main page)",
-    "description2": "Previous version: https://jestella.github.io/portfolio_v1/"
+    "description1": "Updated an existing portfolio with Next.js",
+    "description2": "Previous version: https://jestella.github.io/portfolio_v3/"
   },
   {
     "id": 2,
@@ -20,8 +20,8 @@
     "imageUrl": "https://user-images.githubusercontent.com/31642902/123004445-98efe580-d382-11eb-9d4b-5b954c708aed.png",
     "liveDemo": "https://jestella.github.io/e-commerce/",
     "gitHub": "https://github.com/Jestella/e-commerce",
-    "description1": "E-commerce application with order and payment pages.",
-    "description2": "Features: 1). Google Sign In Authentication 2). Payment with Stripe API 3). Add items from Shop page 4). Remove items from Checkout page."
+    "description1": "Features: 1). Google Sign In Authentication 2). Payment with Stripe API 3). Add items from Shop page 4). Remove items from Checkout page.",
+    "description2": "(Not fully responsive)"
   },
   {
     "id": 3,
@@ -32,8 +32,8 @@
     "imageUrl": "https://user-images.githubusercontent.com/31642902/157604188-c9576af1-c1a9-460a-84b8-6474a8157318.png",
     "liveDemo": "https://bistrolee-jestella.vercel.app/",
     "gitHub": "https://github.com/Jestella/bistrolee",
-    "description1": "My first Next.js project.",
-    "description2": "About, Reservation, and Menues pages "
+    "description1": "A simple website built with Next.js for the first time",
+    "description2": "About, Reservation, and Menus pages"
   },
   {
     "id": 4,
