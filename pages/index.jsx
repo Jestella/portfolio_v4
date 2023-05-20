@@ -43,8 +43,8 @@ export default function Home({}) {
               Hello, I&apos;m Stella!&nbsp;
               <Image
                 src={memoji}
-                width={80}
-                height={80}
+                width={60}
+                height={60}
                 alt='memoji'
                 className='Memoji'
               />

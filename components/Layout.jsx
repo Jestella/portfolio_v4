@@ -7,12 +7,12 @@ const Layout = (props) => {
   const { children } = props;
 
   return (
-    <>
+    <div className='layout'>
       <Meta />
       <main>{children}</main>
       <FixedItem />
       <Footer />
-    </>
+    </div>
   );
 };
 
