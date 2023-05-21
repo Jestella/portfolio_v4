@@ -45,7 +45,7 @@
     "liveDemo": "https://jestella.github.io/multimedia/",
     "gitHub": "https://github.com/Jestella/multimedia",
     "description1": "All components, including modal window, slider, tabs, navbar are built with JavaScript from scratch.",
-    "description2": "Learned about event propagation, delegation, DOM traversing, and lazy loading images"
+    "description2": "Learned DOM manipulation."
   },
   {
     "id": 5,
@@ -69,7 +69,7 @@
     "liveDemo": "https://jestella.github.io/starwars/",
     "gitHub": "https://github.com/Jestella/starwars",
     "description1": "Click the logo if you don't see the main page.",
-    "description2": "Illustration Copyright: Lucasfilm Ltd. (11), Charles Morgan Smith—Getty Images; Photo Illustration by Kenneth Bachor for TIME https://time.com/4788422/best-star-wars-moments/"
+    "description2": "Fetched data from SWAPI API "
   },
   {
     "id": 7,

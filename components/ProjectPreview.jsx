@@ -6,16 +6,14 @@ const ProjectPreview = () => {
     <div className='cards'>
       {projectData.map(({ imageUrl, title, technologies }, index) => (
         <div className='card' key={index}>
-          <div className='card-img'>
-            {/* <Image src={imageUrl} alt='project image' layout='fill'></Image> */}
-            <picture>
-              <img
-                src={imageUrl}
-                alt='Project image'
-                style={{ borderRadius: '20px' }}
-              />
-            </picture>
-          </div>
+          <picture className='card-img'>
+            <img
+              src={imageUrl}
+              alt='Project image'
+              style={{ borderRadius: '20px' }}
+            />
+          </picture>
+
           <div className='card-text'>
             <p className='card-project-name'>{title}</p>
             <p className='card-project-subname'>{technologies}</p>

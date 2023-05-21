@@ -21,9 +21,6 @@ const PortfolioItems = () => {
           index
         ) => (
           <div key={index} className='project-item'>
-            <h2 className='project-name'>
-              {title} / {year}
-            </h2>
             <div className='project-container'>
               <div className='project-image-container'>
                 {/* <Image
@@ -42,7 +39,8 @@ const PortfolioItems = () => {
               </div>
               <div className='project-content-container'>
                 <p className='project-technologies'>{technologies}</p>
-                <h3 className='project-subname'>{sub}</h3>
+                <h1 className='project-name'>{title}</h1>
+                <p className='project-subname'>{sub}</p>
                 <div className='project-btn'>
                   <Button>
                     <a href={liveDemo} target='_blank' rel='noreferrer'>
@@ -55,6 +53,7 @@ const PortfolioItems = () => {
                     </a>
                   </Button>
                 </div>
+
                 <p>&#8226; {description1}</p>
                 <p>&#8226; {description2}</p>
               </div>

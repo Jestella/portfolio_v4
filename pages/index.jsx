@@ -34,7 +34,9 @@ export default function Home({}) {
       <section className='home-project'>
         <SectionTitle>project</SectionTitle>
         <div className='home-project-container'>
-          <p>These are some of my recent projects.</p>
+          <p className='home-project-intro'>
+            These are some of my recent projects.
+          </p>
           <ProjectPreview />
         </div>
       </section>
@@ -108,7 +110,7 @@ export default function Home({}) {
             <h2>💻</h2>
             <p>What I learn & build each month.</p>
             <div className='center'>
-              <button className='dev-btn'>
+              <button className='btn-dark'>
                 <Link href='/devlog'>More</Link>
               </button>
             </div>
@@ -121,7 +123,7 @@ export default function Home({}) {
             <h2>💡</h2>
             <p>Random Experiments.</p>
             <div className='center'>
-              <button className='dev-btn'>
+              <button className='btn-dark'>
                 <Link href='/lab'>More</Link>
               </button>{' '}
             </div>

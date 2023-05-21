@@ -6,7 +6,8 @@
 :root {
   --font-family: 'Roboto', sans-serif;
   --color-black: #262626;
-  --color-gray-light: #aaa6a6;
+  --color-gray-light: #e4e3e3;
+  --color-gray: #aaa6a6;
   --color-gray-dark: #767474;
   --color-yellow: #fddb3a;
   --color-pink-dark: #fbc6c6;
@@ -59,6 +60,7 @@ input {
   background-color: inherit;
   color: var(--color-green-light);
   border: 1px solid var(--color-green-light);
+  border-radius: 5px;
   width: 86px;
   height: 30px;
   font-size: 15px;
@@ -187,7 +189,7 @@ nav {
 
 .nav-links p {
   font-size: 13px;
-  color: var(--color-gray-light);
+  color: var(--color-gray);
   font-weight: 500;
   margin: 0 30px;
 
@@ -197,7 +199,7 @@ nav {
 }
 
 .nav-item {
-  -webkit-text-stroke: 0.5px var(--color-gray-light);
+  -webkit-text-stroke: 0.5px var(--color-gray);
   font-weight: 900;
   font-size: 23px;
 
@@ -231,7 +233,7 @@ nav {
   align-items: right;
   flex-direction: column;
   text-align: center;
-  background-color: var(--color-green-light);
+  background-color: var(--color-gray-light);
   width: 100vw;
   margin-top: 1rem;
   padding: 20px;
@@ -253,20 +255,19 @@ nav {
 .main {
   display: flex;
   justify-content: center;
-  padding: 175px;
-  margin: 30px 5px;
+  padding: 175px 0;
+  margin: 30px 0;
   font-family: 'Roboto', sans-serif;
 }
 
 .profile-image {
   padding: 2px;
-  background-color: var(--color-black);
-  border-radius: 150%;
+  border-radius: 50%;
   cursor: pointer;
 
   &:hover {
     transition: 0.1.5s ease-in-out;
-    opacity: 90%;
+    opacity: 50%;
   }
 }
 
@@ -378,7 +379,7 @@ nav {
 /* home - skills */
 
 .skills-container {
-  margin: 100px 50px;
+  margin: 140px 50px 160px;
 
   ul {
     display: flex;
@@ -435,17 +436,10 @@ nav {
   flex-wrap: wrap;
 }
 
-/* home - devlog */
-.home-devlog {
-  padding: 30px 0 100px;
-  background-color: var(--color-pink-dark);
-  flex-basis: calc(50%);
-}
-
 .home-devlog-container,
 .home-lab-container {
   text-align: center;
-  padding: 50px 0;
+  padding: 120px 0 70px;
 
   h1 {
     font-family: 'Shadows Into Light', cursive;
@@ -454,10 +448,18 @@ nav {
   }
 }
 
-.dev-btn {
+/* home - devlog */
+.home-devlog {
+  padding: 30px 0 100px;
+  background-color: var(--color-pink-dark);
+  flex-basis: calc(50%);
+}
+
+.btn-dark {
   background-color: inherit;
   color: var(--color-grey-dark);
   border: 1px solid var(--color-gray-dark);
+  border-radius: 5px;
   width: 86px;
   height: 30px;
   font-size: 15px;
@@ -478,7 +480,6 @@ nav {
   padding: 30px 0 100px;
   flex-basis: calc(50%);
   background-color: var(--color-green-light);
-  color: #fff;
 }
 
 .center {
@@ -569,13 +570,6 @@ nav {
   margin: 20px 90px 130px 90px;
 }
 
-.project-name {
-  margin-left: 100px;
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--color-pink-light);
-}
-
 .project-image-container {
   picture {
     border-radius: 10px;
@@ -593,21 +587,24 @@ nav {
   .project-technologies {
     color: var(--color-green-light);
     font-weight: 400;
-  }
-
-  .project-subname {
-    font-style: italic;
-    margin-top: 10px;
-  }
-
-  p {
-    font-size: 16.5px;
-    line-height: 22px;
+    font-size: 0.9rem;
   }
 
   Button {
-    margin: 0 3px;
+    margin: 10px 3px 12px;
   }
+}
+
+.project-name {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-gray-light);
+  margin-bottom: 5px;
+}
+
+.project-subname {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
 }
 
 /* devlog page */
@@ -674,11 +671,19 @@ nav {
   border: none;
 }
 
+.btn-search {
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 30px;
+  font-size: 15px;
+}
+
 /* lab page */
 
 .lab {
   background-color: var(--color-green-light);
-  color: #fff;
+
   padding: 200px 0 250px;
   background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
 }
@@ -756,6 +761,10 @@ footer a {
     font-size: 30px;
     line-height: 40px;
   }
+
+  body {
+    overscroll-behavior-x: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -798,6 +807,10 @@ footer a {
 }
 
 @media screen and (max-width: 767px) {
+  p {
+    line-height: 1.3rem;
+  }
+
   .nav-right {
     display: none;
   }
@@ -869,7 +882,7 @@ footer a {
   }
 
   .skills-container {
-    margin-left: 20px;
+    margin: 80px 50px 90px 20px;
 
     ul {
       display: grid;
@@ -880,6 +893,13 @@ footer a {
 
   .home-project-container {
     padding: 0 0 50px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .home-project-intro {
+    width: 100vw;
+    margin: 70px 0;
   }
 
   .home-devlog-container,
@@ -900,6 +920,23 @@ footer a {
     }
   }
 
+  .project-content-container {
+    width: 100vw;
+    margin: 5px 15px 100px;
+    padding: 0 10px;
+  }
+
+  .project-technologies,
+  .project-name,
+  .project-subname,
+  .project-btn {
+    text-align: center;
+  }
+
+  .project-btn {
+    margin: 20px 0 30px;
+  }
+
   .project-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -907,8 +944,8 @@ footer a {
   }
 
   .project-name {
-    text-align: center;
-    margin: 60px 0 20px 0;
+    margin: 0 0 5px;
+    padding-top: 0;
   }
 
   .project-image-container {
@@ -923,6 +960,10 @@ footer a {
     }
   }
 
+  .project-image-container {
+    margin: 0;
+  }
+
   .devlog-container {
     margin: 0 20px;
   }
@@ -931,20 +972,11 @@ footer a {
     padding: 0;
   }
 
-  .project-content-container {
-    width: 100vw;
-    margin-left: 40px;
+  .lab-container {
+    padding: 0;
   }
 
-  .project-container {
-    margin: 0;
-  }
-
-  .project-image-container {
-    margin: 0;
-  }
-
-  .project-content-container {
-    margin: 15px;
+  .footer-message {
+    font-size: 0.9rem;
   }
 }
