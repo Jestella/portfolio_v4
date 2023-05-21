@@ -538,7 +538,7 @@ nav {
   }
 
   h3 {
-    padding: 40px 0 10px 0;
+    padding: 40px 0 10px;
   }
 
   p {
@@ -797,123 +797,11 @@ footer a {
     margin: 0;
     text-align: center;
     line-height: 34px;
-    width: 100vw;
   }
 
   .home-devlog,
   .home-lab {
     flex-basis: 100%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  p {
-    line-height: 1.3rem;
-  }
-
-  .nav-right {
-    display: none;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 14px;
-  }
-
-  .button {
-    font-size: 13px;
-    width: 90px;
-  }
-
-  .layout {
-    width: 100vw;
-  }
-
-  .main {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 40px 50%;
-    margin: 20px 0;
-  }
-
-  .main-image {
-    justify-self: center;
-    margin-bottom: 40px;
-  }
-
-  .profile-image {
-    width: 140px;
-    height: 140px;
-  }
-
-  .main-content {
-    font-size: 28px;
-    margin: 0;
-    padding: 0 3%;
-    line-height: 34px;
-    width: 100vw;
-    margin-left: 10vw;
-    text-align: left;
-  }
-
-  .section-title {
-    text-align: center;
-    margin: 20px 12px 30px;
-  }
-
-  /* project-preview-card */
-  .cards img {
-    width: 90vw;
-    height: auto;
-  }
-
-  .about-container span {
-    margin: 12px;
-    text-align: center;
-
-    h1 {
-      font-size: 36px;
-    }
-  }
-
-  .skills-container {
-    margin: 80px 50px 90px 20px;
-
-    ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 20px;
-    }
-  }
-
-  .home-project-container {
-    padding: 0 0 50px;
-    margin: 0;
-    text-align: center;
-  }
-
-  .home-project-intro {
-    width: 100vw;
-    margin: 70px 0;
-  }
-
-  .home-devlog-container,
-  .home-lab-container {
-    padding: 0 0 50px;
-  }
-
-  h1 {
-    font-size: 36px;
-    padding: 50px 0 0;
-  }
-
-  .about-container {
-    margin: 12px;
-
-    h1 {
-      font-size: 36px;
-    }
   }
 
   .project-content-container {
@@ -974,5 +862,109 @@ footer a {
 
   .footer-message {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  p {
+    line-height: 1.3rem;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+  }
+
+  .button {
+    font-size: 13px;
+    width: 90px;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px 50%;
+    margin: 20px 0;
+  }
+
+  .main-image {
+    justify-self: center;
+    margin-bottom: 40px;
+  }
+
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .main-content {
+    font-size: 28px;
+    line-height: 34px;
+    width: 100vw;
+    padding-left: 10vw;
+    text-align: left;
+  }
+
+  .section-title {
+    text-align: center;
+    margin: 20px 12px 30px;
+  }
+
+  /* project-preview-card */
+  .card img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .about-container span {
+    text-align: center;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  .skills-container {
+    margin: 80px 50px 90px 20px;
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+  }
+
+  .home-project-container {
+    padding: 0 0 50px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .home-project-intro {
+    width: 100vw;
+    margin: 70px 0;
+  }
+
+  .home-devlog-container,
+  .home-lab-container {
+    padding: 0 0 50px;
+  }
+
+  h1 {
+    font-size: 36px;
+    padding: 50px 0 0;
+  }
+
+  .about-container {
+    margin: 12px;
+
+    h1 {
+      font-size: 36px;
+    }
   }
 }
