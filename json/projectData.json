@@ -25,6 +25,18 @@
   },
   {
     "id": 3,
+    "title": "TO World Tour",
+    "year": "2022",
+    "sub": "Tour Agency Website",
+    "technologies": "WordPress",
+    "imageUrl": "https://github.com/Jestella/portfolio_v4/assets/31642902/4c4e6fd5-331a-41d4-a885-65be6cf5a695",
+    "liveDemo": "https://toworldtour.com",
+    "gitHub": "https://toworldtour.com",
+    "description1": "Content creation, UI/UX design, and development ",
+    "description2": "Features: 1) Payment Integration and multi-language support"
+  },
+  {
+    "id": 4,
     "title": "bistro lee",
     "year": "2022",
     "sub": "Restaurant website",
@@ -32,11 +44,11 @@
     "imageUrl": "https://user-images.githubusercontent.com/31642902/157604188-c9576af1-c1a9-460a-84b8-6474a8157318.png",
     "liveDemo": "https://bistrolee-jestella.vercel.app/",
     "gitHub": "https://github.com/Jestella/bistrolee",
-    "description1": "A simple website built with Next.js for the first time",
+    "description1": "A simple restaurant website built with Next.js",
     "description2": "About, Reservation, and Menus pages"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "S Multimedia Studio",
     "year": "2021",
     "sub": "Built with Vanilla JavaScript",
@@ -48,7 +60,7 @@
     "description2": "Learned DOM manipulation."
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Quiz",
     "year": "2021",
     "sub": "Get-to-Know-Her Quiz",
@@ -60,7 +72,7 @@
     "description2": "Created quiz API (url: https://s-quiz-api.herokuapp.com/quiz)"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Star Wars for non Star Wars fans",
     "year": "2021",
     "sub": "Star Wars Cheat Sheet",
@@ -72,7 +84,7 @@
     "description2": "Fetched data from SWAPI API "
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Blog, Story",
     "year": "2020",
     "sub": "Blog website built with EJS templatting language",

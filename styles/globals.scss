@@ -25,6 +25,7 @@ body {
   background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
   color: var(--color-text);
   overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
 }
 
 body ::selection {
