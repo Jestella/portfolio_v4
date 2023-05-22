@@ -33,19 +33,19 @@
     "liveDemo": "https://toworldtour.com",
     "gitHub": "https://toworldtour.com",
     "description1": "Content creation, UI/UX design, and development ",
-    "description2": "Features: 1) Payment Integration and multi-language support"
+    "description2": "Features: Payment Integration and multi-language support"
   },
   {
     "id": 4,
-    "title": "bistro lee",
+    "title": "Heroic Minds",
     "year": "2022",
-    "sub": "Restaurant website",
-    "technologies": "Next.js, TypeScript, Sass",
-    "imageUrl": "https://user-images.githubusercontent.com/31642902/157604188-c9576af1-c1a9-460a-84b8-6474a8157318.png",
-    "liveDemo": "https://bistrolee-jestella.vercel.app/",
-    "gitHub": "https://github.com/Jestella/bistrolee",
-    "description1": "A simple restaurant website built with Next.js",
-    "description2": "About, Reservation, and Menus pages"
+    "sub": "",
+    "technologies": "React, Bootstrap",
+    "imageUrl": "https://github.com/Jestella/portfolio_v4/assets/31642902/cfc0e229-35a8-4882-b64b-152679be947a",
+    "liveDemo": "https://heroicminds.live",
+    "gitHub": "https://github.com/Jestella",
+    "description1": "Communicated with the client for improvement and implemented changes to optimize the overall design",
+    "description2": "UI/UX design using Figma and development with React.js"
   },
   {
     "id": 5,
