@@ -1,12 +1,11 @@
-import Button from '../components/Button';
-import Navbar from '../components/Navbar';
-import PortfolioItems from '../components/PortfolioItems';
+import Navbar from "../components/Navbar";
+import PortfolioItems from "../components/PortfolioItems";
 
 const Portfolio = () => {
   return (
-    <div className='portfolio'>
+    <div className="portfolio">
       <Navbar />
-      <div className='portfolio-container'>
+      <div className="portfolio-container">
         <PortfolioItems />
       </div>
     </div>

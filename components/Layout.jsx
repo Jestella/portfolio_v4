@@ -1,13 +1,10 @@
-import Meta from './Meta';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import FixedItem from './FixedItem';
+import Meta from "./Meta";
+import Footer from "./Footer";
+import FixedItem from "./FixedItem";
 
-const Layout = (props) => {
-  const { children } = props;
-
+const Layout = ({ children }) => {
   return (
-    <div className='layout'>
+    <div className="layout">
       <Meta />
       <main>{children}</main>
       <FixedItem />
