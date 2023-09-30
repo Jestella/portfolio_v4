@@ -4,6 +4,17 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        {/*Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-5H1DNF7FDR"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-5H1DNF7FDR');
+        </script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -24,16 +35,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
           rel="stylesheet"
         />
-        {/*Google tag (gtag.js) */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-5H1DNF7FDR"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-5H1DNF7FDR');
-        </script>
       </Head>
       <body>
         <Main />
