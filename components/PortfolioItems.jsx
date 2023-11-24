@@ -1,6 +1,6 @@
-import projectData from '../json/projectData.json';
+import projectData from "../json/projectData.json";
 
-import Button from './Button';
+import Button from "./ui/Button";
 
 const PortfolioItems = () => {
   return (
@@ -20,9 +20,9 @@ const PortfolioItems = () => {
           },
           index
         ) => (
-          <div key={index} className='project-item'>
-            <div className='project-container'>
-              <div className='project-image-container'>
+          <div key={index} className="project-item">
+            <div className="project-container">
+              <div className="project-image-container">
                 {/* <Image
               src={item.imageUrl}
               className='project-image'
@@ -32,23 +32,23 @@ const PortfolioItems = () => {
                 <picture>
                   <img
                     src={imageUrl}
-                    alt='Project image'
-                    style={{ borderRadius: '20px' }}
+                    alt="Project image"
+                    style={{ borderRadius: "20px" }}
                   />
                 </picture>
               </div>
-              <div className='project-content-container'>
-                <p className='project-technologies'>{technologies}</p>
-                <h1 className='project-name'>{title}</h1>
-                <p className='project-subname'>{sub}</p>
-                <div className='project-btn'>
+              <div className="project-content-container">
+                <p className="project-technologies">{technologies}</p>
+                <h1 className="project-name">{title}</h1>
+                <p className="project-subname">{sub}</p>
+                <div className="project-btn">
                   <Button>
-                    <a href={liveDemo} target='_blank' rel='noreferrer'>
+                    <a href={liveDemo} target="_blank" rel="noreferrer">
                       live
                     </a>
                   </Button>
                   <Button>
-                    <a href={gitHub} target='_blank' rel='noreferrer'>
+                    <a href={gitHub} target="_blank" rel="noreferrer">
                       github
                     </a>
                   </Button>

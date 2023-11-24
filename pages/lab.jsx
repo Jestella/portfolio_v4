@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ui/Navbar";
 
 function Lab() {
   const [likes, setLikes] = useState(0);
@@ -14,7 +14,7 @@ function Lab() {
       <div className="lab-container">
         <h1>Coming Soon...💡</h1>
 
-        <Link href="/" className="btn">
+        <Link href="/">
           <button className="btn-dark">Home</button>
         </Link>
         {/* <div>

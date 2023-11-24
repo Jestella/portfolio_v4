@@ -1,7 +1,7 @@
 import devlogData from "../json/devlogData.json";
 import Link from "next/link";
 
-const DevlogItems = () => {
+const DevlogItems = ({}) => {
   return devlogData
     .slice(0)
     .reverse()

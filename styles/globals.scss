@@ -9,7 +9,6 @@
   --color-gray-light: #e4e3e3;
   --color-gray: #aaa6a6;
   --color-gray-dark: #767474;
-  --color-yellow: #fddb3a;
   --color-pink-dark: #fbc6c6;
   --color-pink-light: #ffeded;
   --color-green-light: #d4d772;
@@ -34,7 +33,7 @@ body {
 }
 
 body ::selection {
-  color: var(--color-yellow);
+  color: var(--color-gray-light);
   background: #000;
 }
 
@@ -63,17 +62,19 @@ input {
 }
 
 .btn {
-  background-color: inherit;
-  color: var(--color-green-light);
-  border: 1px solid var(--color-green-light);
+  background-color: transparent; /* Make the background transparent */
+  background-image: linear-gradient(45deg, #c8f2c3, #a8dbfa, #635ee2);
+  color: transparent;
+  border: 1px solid var(--color-gray-dark);
   border-radius: 5px;
   width: 86px;
   height: 30px;
   font-size: 15px;
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
 
   &:hover {
-    background-color: var(--color-green-light);
-    color: var(--color-black);
+    background-image: linear-gradient(45deg, #c8f2c3, #faa8ea, #635ee2);
   }
 }
 
@@ -119,9 +120,13 @@ input {
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient(#d1cfcf, #9a9999);
+  background: -webkit-linear-gradient(45deg, #c8f2c3, #a8dbfa, #635ee2);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  &:hover {
+    background-image: linear-gradient(45deg, #c8f2c3, #faa8ea, #635ee2);
+  }
 }
 
 /* card */
@@ -200,7 +205,7 @@ nav {
   margin: 0 30px;
 
   &:hover {
-    color: var(--color-yellow);
+    color: var(--color-gray-light);
   }
 }
 
@@ -211,7 +216,7 @@ nav {
 
   &:hover {
     -webkit-text-stroke: 0;
-    color: var(--color-yellow);
+    color: var(--color-gray-light);
     text-shadow: none;
   }
 }
@@ -470,9 +475,8 @@ nav {
   font-size: 15px;
 
   &:hover {
-    background-color: var(--color-gray-light);
-    color: var(--color-black);
-    border: none;
+    color: var(--color-gray);
+    border: 1px solid var(--color-gray);
   }
 }
 
@@ -591,7 +595,6 @@ nav {
   margin-left: 40px;
 
   .project-technologies {
-    color: var(--color-green-light);
     font-weight: 400;
     font-size: 0.9rem;
   }

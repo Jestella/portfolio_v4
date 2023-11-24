@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Navbar from "./Navbar";
+import Navbar from "./ui/Navbar";
 
 import profileImage from "../public/src/assets/images/profile.jpeg";
 
@@ -28,9 +28,9 @@ const Main = () => {
           <br />
           <span>based in Toronto,</span>
           <br />
-          <span className="gradient-text">who loves everything</span>
+          <span>who loves everything</span>
           <br />
-          <span className="gradient-text">that has to do with</span>
+          <span>that has to do with</span>
           <br />
           <span className="gradient-text">art, design & technology.</span>
         </div>

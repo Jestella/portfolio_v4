@@ -1,5 +1,5 @@
-import Meta from "./Meta";
-import Footer from "./Footer";
+import Meta from "../Meta";
+import Footer from "../Footer";
 import FixedItem from "./FixedItem";
 
 const Layout = ({ children }) => {

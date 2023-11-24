@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ui/Navbar";
 import PortfolioItems from "../components/PortfolioItems";
 
-const Portfolio = () => {
+const Work = () => {
   return (
     <div className="portfolio">
       <Navbar />
@@ -12,4 +12,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Work;

@@ -1,12 +1,23 @@
+import { useState } from "react";
 import DevlogItems from "../components/DevlogItems";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ui/Navbar";
 import SearchBar from "../components/SearchBar";
+import devlogData from "../json/devlogData.json";
 
 const Devlog = () => {
+  const [filteredItems, setFilteredItems] = useState(devlogData);
+
   const handleSearch = (query) => {
-    // Handle search functionality based on the query
     console.log("Search query:", query);
-    // Add your search logic here
+
+    // Filter the initial items based on the search query
+    const filteredItems = devlogData.filter(
+      (item) =>
+        item.title.toLowerCase().includes(query.toLowerCase()) ||
+        item.sub.toLowerCase().includes(query.toLowerCase())
+    );
+
+    setFilteredItems(query ? filteredItems : devlogData);
   };
   return (
     <div className="devlog">
@@ -15,7 +26,7 @@ const Devlog = () => {
         <div className="devlog">
           <h2 className="center">Work & Study Log</h2>
           <SearchBar onSearch={handleSearch} />
-          <DevlogItems />
+          <DevlogItems items={filteredItems} />
         </div>
       </div>
     </div>

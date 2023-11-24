@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import SectionTitle from "../components/SectionTitle";
+import SectionTitle from "../components/ui/SectionTitle";
 import Main from "../components/Main";
-import Button from "../components/Button";
-import ResponsiveIcons from "../components/ResponsiveIcons";
+import Button from "../components/ui/Button";
+import ResponsiveIcons from "../components/ui/ResponsiveIcons";
 import ProjectPreview from "../components/ProjectPreview";
 
 import { server } from "../config";
@@ -28,6 +28,7 @@ export default function Home({}) {
     <>
       <section className="home">
         <ResponsiveIcons />
+
         <Main />
       </section>
 
