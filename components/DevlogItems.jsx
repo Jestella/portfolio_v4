@@ -19,13 +19,13 @@ const DevlogItems = ({}) => {
 
               <div className="devlog-read">
                 <span className="related-link">
-                  <FaLink color="#cccccc" /> {item.link}:{" "}
+                  <FaLink color="#cccccc" />:{" "}
                   <Link
                     href={item.linkUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {item.linkUrl}
+                    {item.link}
                   </Link>
                 </span>
               </div>

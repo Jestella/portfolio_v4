@@ -149,7 +149,7 @@ input {
   img {
     max-width: 400px;
     height: 260px;
-    opacity: 0.7;
+    opacity: 0.8;
 
     &:hover {
       opacity: 1;
@@ -249,24 +249,32 @@ nav {
 
 .nav-menu-mobile {
   position: absolute;
-  top: 30px;
+  top: 1.5rem;
   right: 0;
   display: flex;
   justify-content: center;
   align-items: right;
   flex-direction: column;
   text-align: center;
-  background-color: var(--color-gray-light);
+  background-color: var(--color-black);
   width: 100vw;
+  height: 100vh;
   margin-top: 1rem;
+  margin-right: -50%;
   padding: 20px;
   font-size: 14px;
-  opacity: 85%;
+  opacity: 0.8;
+  align-items: center;
 }
 
 .nav-menu-mobile p {
-  margin: 1rem 0;
-  font-weight: 400;
+  margin: 0 0 50%;
+  font-weight: 500;
+  color: var(--color-white);
+
+  &:hover {
+    color: var(--color-pink);
+  }
 }
 
 /* home - main */
@@ -526,7 +534,7 @@ nav {
 .fixed-item {
   position: fixed;
   top: 86vh;
-  right: 24px;
+  right: 30px;
   width: 30px;
   height: 100px;
 
@@ -534,7 +542,7 @@ nav {
     color: var(--color-gray-light);
     border: none;
     background-color: inherit;
-    margin: 3px;
+    margin: 5px;
 
     &:hover {
       transition: 0.2s ease-in-out;
@@ -663,7 +671,7 @@ nav {
 }
 
 .month {
-  font-size: 13px;
+  font-size: 0.8rem;
   color: var(--color-gray);
 }
 
@@ -687,6 +695,7 @@ nav {
 .related-link {
   font-size: 0.8rem;
   color: var(--color-gray-light);
+  cursor: pointer;
 
   a {
     color: var(--color-gray-dark);
@@ -1013,5 +1022,9 @@ footer a {
     h1 {
       font-size: 36px;
     }
+  }
+
+  .fixed-item {
+    right: 20px;
   }
 }
