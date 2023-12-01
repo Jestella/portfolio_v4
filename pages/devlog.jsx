@@ -24,8 +24,8 @@ const Devlog = () => {
       <Navbar />
       <div className="devlog-container">
         <div className="devlog">
-          <h2 className="center">Work & Study Log</h2>
-          <SearchBar onSearch={handleSearch} />
+          <h2 className="center">Development Log</h2>
+          {/* <SearchBar onSearch={handleSearch} /> */}
           <DevlogItems items={filteredItems} />
         </div>
       </div>

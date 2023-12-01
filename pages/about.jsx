@@ -8,7 +8,7 @@ const About = () => {
       <div className="about">
         <Navbar />
         <div className="about-container">
-          <h1>
+          <h1 className="cursive-text">
             Hello, I`&apos;m Stella!&nbsp;
             <Image
               src={memoji}

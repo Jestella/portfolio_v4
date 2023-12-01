@@ -9,10 +9,9 @@
   --color-gray-light: #e4e3e3;
   --color-gray: #aaa6a6;
   --color-gray-dark: #767474;
-  --color-pink-dark: #fbc6c6;
-  --color-pink-light: #ffeded;
-  --color-green-light: #d4d772;
-  --color-navy-dark: #03021e;
+  --color-pink: #de83cd;
+  --color-navy-dark: #313052;
+  --color-white: #fefafa;
   --color-text: #2e2424;
 }
 
@@ -26,7 +25,9 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: var(--font-family);
-  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  background-color: var(--color-black);
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
   color: var(--color-text);
   overscroll-behavior-x: none;
   overscroll-behavior-y: none;
@@ -62,7 +63,7 @@ input {
 }
 
 .btn {
-  background-color: transparent; /* Make the background transparent */
+  background-color: transparent;
   background-image: linear-gradient(45deg, #c8f2c3, #a8dbfa, #635ee2);
   color: transparent;
   border: 1px solid var(--color-gray-dark);
@@ -75,6 +76,7 @@ input {
 
   &:hover {
     background-image: linear-gradient(45deg, #c8f2c3, #faa8ea, #635ee2);
+    transition: 0.2s ease-in-out;
   }
 }
 
@@ -129,6 +131,10 @@ input {
   }
 }
 
+.cursive-text {
+  font-family: "Shadows Into Light", cursive;
+}
+
 /* card */
 .cards {
   display: flex;
@@ -143,9 +149,10 @@ input {
   img {
     max-width: 400px;
     height: 260px;
+    opacity: 0.7;
 
     &:hover {
-      opacity: 0.7;
+      opacity: 1;
       transition: 0.2s ease-in-out;
     }
   }
@@ -157,13 +164,12 @@ input {
   }
 
   .card-project-name {
-    font-size: 16px;
     margin: 10px 0 5px;
   }
 
-  .card-project-subname {
-    font-size: 14px;
-    font-weight: 600;
+  .card-project-tech {
+    font-size: 0.9rem;
+    font-weight: 500;
     margin: 0;
   }
 
@@ -178,7 +184,7 @@ nav {
   width: 100%;
   height: 70px;
   cursor: pointer;
-  color: var(--color-black);
+  color: var(--color-gray-light);
 
   ul {
     display: flex;
@@ -200,24 +206,30 @@ nav {
 
 .nav-links p {
   font-size: 13px;
-  color: var(--color-gray);
+  color: var(--color-gray-light);
   font-weight: 500;
   margin: 0 30px;
 
   &:hover {
-    color: var(--color-gray-light);
+    background-image: linear-gradient(45deg, #c8f2c3, #faa8ea, #635ee2);
+    background-color: transparent;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
   }
 }
 
 .nav-item {
-  -webkit-text-stroke: 0.5px var(--color-gray);
+  // -webkit-text-stroke: 1px var(--color-gray-dark);
   font-weight: 900;
   font-size: 23px;
 
   &:hover {
-    -webkit-text-stroke: 0;
-    color: var(--color-gray-light);
-    text-shadow: none;
+    background-image: linear-gradient(45deg, #c8f2c3, #faa8ea, #635ee2);
+    background-color: transparent;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
   }
 }
 
@@ -260,7 +272,8 @@ nav {
 /* home - main */
 
 .home {
-  padding: 25px 0;
+  padding: 6rem 0;
+  color: var(--color-white);
 }
 
 .main {
@@ -274,18 +287,25 @@ nav {
   padding: 2px;
   border-radius: 50%;
   cursor: pointer;
+  opacity: 80%;
 
   &:hover {
     transition: 0.1.5s ease-in-out;
-    opacity: 50%;
+    opacity: 100%;
   }
 }
 
 .main-content {
   margin-left: 40px;
-  font-size: 36px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 42px;
+  line-height: 38px;
+
+  .cursive-text {
+    font-size: 44px;
+  }
 }
 
 /* home - responsive icons */
@@ -296,7 +316,7 @@ nav {
 
 .responsive_icon {
   position: absolute;
-  font-size: 42px;
+  font-size: 34px;
 
   @media screen and (max-width: 799px) {
     display: none;
@@ -304,35 +324,35 @@ nav {
 }
 
 .fa-code-branch {
-  top: 180px;
+  top: 190px;
   left: 230px;
   animation: rotate 2s infinite alternate;
   color: #ffbcbc;
 }
 
 .fa-cog {
-  top: 370px;
+  top: 390px;
   left: 120px;
   animation: rotate 2.5s infinite alternate;
   color: #7dedff;
 }
 
 .fa-star {
-  top: 150px;
+  top: 210px;
   right: 350px;
   animation: rotate 2s infinite alternate;
   color: #b3e283;
 }
 
 .fa-wrench {
-  top: 360px;
+  top: 400px;
   right: 220px;
   animation: move-up 2s infinite alternate;
   color: #d9dd6b;
 }
 
 .fa-code {
-  top: 260px;
+  top: 280px;
   right: 90px;
   animation: move-down 2s infinite alternate;
   color: #c490e4;
@@ -383,13 +403,48 @@ nav {
 }
 
 .section-title {
-  margin: 0 0 -20px 30px;
+  color: var(--color-gray);
+  text-align: center;
+}
+
+/* home - project */
+.home-project {
+  padding: 30px 0;
+  color: var(--color-gray-light);
+}
+
+.home-project-container {
+  padding: 40px 0;
+  margin: 0 90px;
+}
+
+.home-project-intro {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.project-btns Button {
+  margin: 10px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(5rem);
+}
+
+.center {
+  margin: 30px 0 50px;
+  text-align: center;
 }
 
 /* home - skills */
+.skills {
+  background-color: var(--color-white);
+  padding-bottom: 20px;
+}
 
 .skills-container {
-  margin: 140px 50px 160px;
+  margin: 140px 50px;
 
   ul {
     display: flex;
@@ -414,32 +469,6 @@ nav {
   }
 }
 
-/* home - project */
-.home-project {
-  background-color: var(--color-black);
-  color: #fff;
-  padding: 30px 0;
-}
-
-.home-project-container {
-  padding: 40px 0;
-  margin: 0 90px;
-}
-
-.project-btns Button {
-  margin: 10px;
-}
-
-.hidden {
-  opacity: 0;
-  transform: translateY(5rem);
-}
-
-.center {
-  margin: 30px 0 50px;
-  text-align: center;
-}
-
 /*home - devlog & lab */
 .home-devlog-lab {
   display: flex;
@@ -450,6 +479,7 @@ nav {
 .home-lab-container {
   text-align: center;
   padding: 120px 0 70px;
+  color: var(--color-gray-light);
 
   h1 {
     font-family: "Shadows Into Light", cursive;
@@ -461,23 +491,11 @@ nav {
 /* home - devlog */
 .home-devlog {
   padding: 30px 0 100px;
-  background-color: var(--color-pink-dark);
+  background: url("https://www.transparenttextures.com/patterns/stardust.png"),
+    linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
   flex-basis: calc(50%);
-}
-
-.btn-dark {
-  background-color: inherit;
-  color: var(--color-black);
-  border: 1px solid var(--color-gray-dark);
-  border-radius: 5px;
-  width: 86px;
-  height: 30px;
-  font-size: 15px;
-
-  &:hover {
-    color: var(--color-gray);
-    border: 1px solid var(--color-gray);
-  }
 }
 
 .center {
@@ -489,7 +507,14 @@ nav {
 .home-lab {
   padding: 30px 0 100px;
   flex-basis: calc(50%);
-  background-color: var(--color-green-light);
+  background: url("https://www.transparenttextures.com/patterns/stardust.png"),
+    linear-gradient(
+      111.4deg,
+      rgba(4, 0, 4, 1) 6.5%,
+      rgba(100, 43, 115, 1) 93.2% 93.2%
+    );
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
 }
 
 .center {
@@ -526,9 +551,7 @@ nav {
 /* about page */
 
 .about {
-  color: #fff;
-  background-color: var(--color-black);
-  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  color: var(--color-white);
   padding: 100px 0;
 }
 
@@ -536,7 +559,7 @@ nav {
   padding: 0 0 80px;
   margin: 0 90px;
 
-  h1 {
+  .cursive-text {
     padding: 0 0 10px;
     font-size: 50px;
     font-family: "Shadows Into Light", cursive;
@@ -556,20 +579,17 @@ nav {
     font-weight: 200;
   }
   span {
-    color: var(--color-green-light);
     font-weight: 500;
   }
 }
 
-/* portfolio page */
+/* work page */
 
-.portfolio {
-  background: var(--color-black);
-  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+.work {
   color: var(--color-gray-light);
 }
 
-.portfolio-container {
+.work-container {
   position: relative;
   padding: 80px 0;
 }
@@ -606,8 +626,8 @@ nav {
 
 .project-name {
   font-size: 22px;
-  font-weight: 500;
-  color: var(--color-gray-light);
+  font-weight: 400;
+  color: #8887ab;
   margin-bottom: 5px;
 }
 
@@ -619,8 +639,12 @@ nav {
 /* devlog page */
 
 .devlog {
-  background-color: var(--color-pink-dark);
   padding: 30px 0;
+  color: var(--color-white);
+  background: url("https://www.transparenttextures.com/patterns/stardust.png"),
+    linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
 }
 
 .devlog-container {
@@ -629,7 +653,7 @@ nav {
 }
 
 .devlog-box {
-  border-left: 3px solid #f5e3e3;
+  border-left: 3px solid var(--color-gray);
   margin-bottom: 30px;
   line-height: 17px;
 }
@@ -640,9 +664,19 @@ nav {
 
 .month {
   font-size: 13px;
+  color: var(--color-gray);
 }
 
-.devlog-box-subtitle::after {
+.devlog-box-sub {
+  color: var(--color-gray);
+}
+
+.devlog-box-tech {
+  font-size: 0.8rem;
+  color: var(--color-pink);
+}
+
+.devlog-box-tech::after {
   content: " ";
   border: 1px solid #f5e3e3;
   margin: 20px 0;
@@ -651,14 +685,14 @@ nav {
 }
 
 .related-link {
-  cursor: pointer;
-  font-size: 14px;
+  font-size: 0.8rem;
+  color: var(--color-gray-light);
 
   a {
     color: var(--color-gray-dark);
   }
   :hover {
-    color: #da6464;
+    color: var(--color-pink);
     transition: 0.15s ease-in-out;
   }
 }
@@ -691,9 +725,16 @@ nav {
 /* lab page */
 
 .lab {
-  background-color: var(--color-green-light);
-  padding: 20vh 0;
-  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  padding: 25vh 0;
+  color: var(--color-gray-light);
+  background: url("https://www.transparenttextures.com/patterns/stardust.png"),
+    linear-gradient(
+      111.4deg,
+      rgba(4, 0, 4, 1) 6.5%,
+      rgba(100, 43, 115, 1) 93.2% 93.2%
+    );
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
 }
 
 .lab-container {
@@ -706,7 +747,6 @@ nav {
 
 footer {
   height: 220px;
-  background-color: var(--color-black);
 }
 
 .footer-message {
@@ -859,7 +899,7 @@ footer a {
     margin: 0 20px;
   }
 
-  .portfolio-container {
+  .work-container {
     padding: 0;
   }
 

@@ -4,25 +4,26 @@
     "month": "Jan 2022",
     "title": "Data Structures & Algorithms",
     "sub": "Completed the Udemy course [Master the Coding Interview: Data Strucrues + Algorithms]",
-    "linkUrl": "https://www.udemy.com/certificate/UC-61c4a8ac-bf1c-4d72-b634-2e002328994c/",
-    "link": "Certificate of Completion"
+    "link": "Certificate of Completion",
+    "linkUrl": "https://www.udemy.com/certificate/UC-61c4a8ac-bf1c-4d72-b634-2e002328994c/"
   },
-
   {
     "id": 2,
     "month": "Mar 2022",
-    "title": "Next.js",
+    "title": "Website design & development",
     "sub": "Built a restaurant website with Next.js",
-    "linkUrl": "https://bistrolee-jestella.vercel.app/",
-    "link": "Live Demo"
+    "tech": "Next.js",
+    "link": "Live Demo",
+    "linkUrl": "https://bistrolee-jestella.vercel.app/"
   },
   {
     "id": 3,
     "month": "Apr 2022",
     "title": "MERN Project",
     "sub": "Built a CRUD API web application with MongoDB, Express, React and Node.js",
-    "linkUrl": "https://github.com/Jestella/mern2",
-    "link": "Github Repository"
+    "tech": "MongoDB, Express, React, Node.js",
+    "link": "Github Repository",
+    "linkUrl": "https://github.com/Jestella/mern2"
   },
 
   {
@@ -30,47 +31,80 @@
     "month": "Jul 2022",
     "title": "Creative Coding with JavaScript",
     "sub": "Made visuals with JavaScript",
-    "linkUrl": "https://youtube.com/shorts/TZWnCKpQenY?feature=share",
-    "link": "Output1"
+    "tech": "JavaScript",
+    "link": "Output1",
+    "linkUrl": "https://youtube.com/shorts/TZWnCKpQenY?feature=share"
   },
   {
     "id": 5,
     "month": "Aug & Sep 2022",
-    "title": "WordPress",
+    "title": "Beauty Clinic Website",
     "sub": "Built a WordPress website for a beauty clinic",
-    "linkUrl": "https://skinlabmedispa.com",
-    "link": "Spa Website"
+    "tech": "WordPress",
+    "link": "Skinlab Medi Spa",
+    "linkUrl": "https://skinlabmedispa.com"
   },
   {
     "id": 7,
     "month": "Nov 2022 - Present",
-    "title": "Shopify",
-    "sub": "Building a Shopify e-commerce store for a small business ",
-    "linkUrl": " ",
-    "link": "Coming soon"
+    "title": "Shopify Development",
+    "sub": "Developed a new Shopify theme using Liquid (a private theme)",
+    "tech": "Shopify, Liquid",
+    "link": "Astrobear",
+    "linkUrl": "https://astrobear.ca"
   },
   {
     "id": 6,
     "month": "Apr 2023",
-    "title": "WordPress",
+    "title": "Beauty Studio Website",
     "sub": "Built a WordPress website for a beauty studio",
-    "linkUrl": "https://nbbeautystudio.com/",
-    "link": "Beauty Studio"
+    "tech": "WordPress",
+    "link": "NB Beauty Studio",
+    "linkUrl": "https://nbbeautystudio.com"
   },
   {
     "id": 7,
-    "month": "May 2023 - Present",
-    "title": "Angular",
-    "sub": "Learning Angular and builiding my first Angular mobile application",
-    "linkUrl": "Coming Soon",
-    "link": "Mobile App"
+    "month": "May 2023 - Jun 2023",
+    "title": "UI development",
+    "sub": "Developed and implemented mobile-responsive CSS styles",
+    "tech": "React, Sass",
+    "link": "Offshore Studio",
+    "linkUrl": "https://www.offshorestudio.co"
+  },
+  {
+    "id": 7,
+    "month": "Jun 2023 - Jul 2023",
+    "title": "UI design",
+    "sub": "Sweat and Tonic - smart touch control panel",
+    "tech": "Figma",
+    "link": "Figma",
+    "linkUrl": "https://www.figma.com/file/NJycnoyGcWR3XEvodl7mK0/Untitled?type=design&node-id=26-95&mode=design&t=R8U0cjWatNcvZb46-0"
   },
   {
     "id": 8,
-    "month": "May 2023 - Present",
-    "title": "React",
-    "sub": "Working on a React project for a studio",
-    "linkUrl": "Coming Soon",
-    "link": "Recording Studio"
+    "month": "Jul 2023 - Sep 2023",
+    "title": "UI development",
+    "sub": "Conducted research and ideation to identify optimal solution for cybersecurity and scalable websites",
+    "tech": "React, JavaScript, Figma",
+    "link": "",
+    "linkUrl": ""
+  },
+  {
+    "id": 9,
+    "month": "Jul 2023 - Oct 2023",
+    "title": "Shopify development",
+    "sub": "Developed a Shopify theme for Clue Inc.",
+    "tech": "Shopify, JavaScript",
+    "link": "Recording Studio",
+    "linkUrl": "https://thebloor.com"
+  },
+  {
+    "id": 10,
+    "month": "Jul 2023 - Nov 2023",
+    "title": "UI development (IoT Development)",
+    "sub": "Sweat and Tonic - smart touch control panel",
+    "tech": "Angular, TypeScript",
+    "link": "live",
+    "linkUrl": "https://www.loom.com/share/453dd5fc441f4f53b392b41226c128ce?sid=ddf2f2ff-8e66-4ceb-b8f8-bf6eeffe7a66"
   }
 ]

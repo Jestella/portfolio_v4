@@ -1,6 +1,8 @@
 import devlogData from "../json/devlogData.json";
 import Link from "next/link";
 
+import { FaLink } from "react-icons/fa";
+
 const DevlogItems = ({}) => {
   return devlogData
     .slice(0)
@@ -12,11 +14,12 @@ const DevlogItems = ({}) => {
             <div className="devlog-textbox">
               <span className="month">{item.month}</span>
               <h3 className="devlog-box-title">{item.title}</h3>
-              <p className="devlog-box-subtitle">{item.sub}</p>
+              <p className="devlog-box-sub">{item.sub}</p>
+              <p className="devlog-box-tech"># {item.tech}</p>
 
               <div className="devlog-read">
                 <span className="related-link">
-                  + Link: {item.link}{" "}
+                  <FaLink color="#cccccc" /> {item.link}:{" "}
                   <Link
                     href={item.linkUrl}
                     target="_blank"

@@ -22,7 +22,7 @@ const Main = () => {
           </Link>
         </div>
         <div className="main-content">
-          <span>Stella Lee</span>
+          <span className="cursive-text">Stella Lee.</span>
           <br />
           <span>a front-end web developer</span>
           <br />

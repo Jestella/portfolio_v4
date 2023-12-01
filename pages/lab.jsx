@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import Navbar from "../components/ui/Navbar";
+import Button from "../components/ui/Button";
 
 function Lab() {
   const [likes, setLikes] = useState(0);
@@ -15,7 +16,7 @@ function Lab() {
         <h1>Coming Soon...💡</h1>
 
         <Link href="/">
-          <button className="btn-dark">Home</button>
+          <Button>Home</Button>
         </Link>
         {/* <div>
           <button onClick={handleClick}>{likes} Likes</button>

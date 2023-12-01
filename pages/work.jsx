@@ -3,9 +3,9 @@ import PortfolioItems from "../components/PortfolioItems";
 
 const Work = () => {
   return (
-    <div className="portfolio">
+    <div className="work">
       <Navbar />
-      <div className="portfolio-container">
+      <div className="work-container">
         <PortfolioItems />
       </div>
     </div>

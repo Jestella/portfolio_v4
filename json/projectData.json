@@ -1,38 +1,38 @@
 [
   {
     "id": 1,
-    "title": "Sweat and Tonic touch panel",
+    "title": "Sweat and Tonic",
     "year": "2023",
     "sub": "Sweat and Tonic UI Design & Development for a smart touch control panel (IoT development)",
     "technologies": "Angular, Typescript, Figma",
-    "imageUrl": "https://private-user-images.githubusercontent.com/31642902/285363326-86cc7cd8-0609-4ec6-9fb6-84b968396a44.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA4MDIzNzksIm5iZiI6MTcwMDgwMjA3OSwicGF0aCI6Ii8zMTY0MjkwMi8yODUzNjMzMjYtODZjYzdjZDgtMDYwOS00ZWM2LTlmYjYtODRiOTY4Mzk2YTQ0LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTI0VDA1MDExOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBlNDhiZjJmMWU1MGUxNmQwNzhmNDczODk1N2EwMjU5MWM2NzkyM2UxOGYwZGRlYzg1MzRiOGQwMzA5MjdiNzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.V8q2ewoxqO0oq7KiOF9kK6Dd4bynxyyb1fbb0jB7JWc",
-    "liveDemo": "/",
+    "imageUrl": "https://github.com/Jestella/portfolio_v4/assets/31642902/3adaae02-4224-43e4-b064-72219c7342ee",
+    "liveDemo": "https://www.loom.com/share/453dd5fc441f4f53b392b41226c128ce?sid=be9407f1-b3b7-410c-b563-f36a90487562",
     "gitHub": "coming soon",
-    "description1": "UI design using Figma",
-    "description2": "UI development using Angular"
+    "description1": "Designed a user interface using Figma for the smart touch control panel, optimized for Crestron TS-1070 touch screen and mobile devices, to be deployed at Sweat and Tonic Yoga Studio.",
+    "description2": "Translated UI designs into code, integrated lighting, audio, and video control systems."
   },
   {
     "id": 2,
-    "title": "e-commerce website",
+    "title": "The Bloor",
     "year": "2023",
-    "sub": "Shopifty Store Developmente",
+    "sub": "Shopifty Theme Development",
     "technologies": "Shopify",
-    "imageUrl": "https://private-user-images.githubusercontent.com/31642902/285364786-7c5543c6-9b02-4854-be77-c9c3f8108ab9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA4MDI5OTUsIm5iZiI6MTcwMDgwMjY5NSwicGF0aCI6Ii8zMTY0MjkwMi8yODUzNjQ3ODYtN2M1NTQzYzYtOWIwMi00ODU0LWJlNzctYzljM2Y4MTA4YWI5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTI0VDA1MTEzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM2MGQ0NTYxYTU0YjI2NTM0MmJlMGZiNGY3YjI5M2U5YjE3MTAyNGQzZmFkMGUwM2Y3NmZlM2M2YzE0ZjZiMGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.fwGMdbBnQvD1ST8Os-LahisQWO0SETw6AJ89i28sywY",
+    "imageUrl": "https://github.com/Jestella/portfolio_v4/assets/31642902/7ff23994-bad3-4195-9559-48fac3a54ede",
     "liveDemo": "https://thebloor.com",
     "gitHub": "/",
-    "description1": "Coming soon",
-    "description2": "Coming soon"
+    "description1": "Developed a Shopify theme using JavaScript and Liquid template language to meet client-specific requirements, including dynamic features and third-party API integration",
+    "description2": "Conducted in-depth research on e-commerce UI/UX trends and analyzed data to improve the user experience and boost sales."
   },
   {
     "id": 3,
-    "title": "Portfolio",
+    "title": "Portfolio (version 4)",
     "year": "2022",
     "sub": "Personal portfolio website",
     "technologies": "Next.js, Sass",
     "imageUrl": "https://user-images.githubusercontent.com/31642902/153725838-7d250f4b-0c86-4ced-92ea-e2702f809eba.png",
     "liveDemo": "https://stella-lee.com",
     "gitHub": "https://github.com/Jestella/portfolio_v3",
-    "description1": "Updated an existing portfolio with Next.js",
+    "description1": "Updated my portfolio using Next.js for improved performance, modular code, and an enhanced user experience.",
     "description2": "Previous version: https://jestella.github.io/portfolio_v3/"
   },
   {
@@ -45,7 +45,7 @@
     "liveDemo": "https://jestella.github.io/e-commerce/",
     "gitHub": "https://github.com/Jestella/e-commerce",
     "description1": "Features: 1). Google Sign In Authentication 2). Payment with Stripe API 3). Add items from Shop page 4). Remove items from Checkout page.",
-    "description2": "(Not fully responsive)"
+    "description2": ""
   },
   {
     "id": 5,
@@ -53,7 +53,7 @@
     "year": "2022",
     "sub": "Tour Agency Website",
     "technologies": "WordPress",
-    "imageUrl": "https://private-user-images.githubusercontent.com/31642902/285365232-e1ad2636-4c82-457e-8316-6cdb4acf3f48.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA4MDMyMjMsIm5iZiI6MTcwMDgwMjkyMywicGF0aCI6Ii8zMTY0MjkwMi8yODUzNjUyMzItZTFhZDI2MzYtNGM4Mi00NTdlLTgzMTYtNmNkYjRhY2YzZjQ4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTI0VDA1MTUyM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNkZDAxMTE1NGFkZDZjN2UxMTc1ZjY2ZDJiYjA0NDhlN2U3ZjA5NzRkMDMzMzc5ZDFiN2RmM2I0ZDAxODVkNWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.I6btlGoqa7w6lUBewAjD-kw-r1Na0keoWQ0nwfMifSQ",
+    "imageUrl": "https://github.com/Jestella/portfolio_v4/assets/31642902/8d887674-c912-447a-bac1-d16517eaac61",
     "liveDemo": "https://toworldtour.com",
     "gitHub": "https://toworldtour.com",
     "description1": "Content creation, UI/UX design, and development ",
@@ -65,7 +65,7 @@
     "year": "2022",
     "sub": "",
     "technologies": "React, Bootstrap",
-    "imageUrl": "https://private-user-images.githubusercontent.com/31642902/285365226-db279754-5237-4c40-8a5b-e953b4c770ad.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA4MDMyMjMsIm5iZiI6MTcwMDgwMjkyMywicGF0aCI6Ii8zMTY0MjkwMi8yODUzNjUyMjYtZGIyNzk3NTQtNTIzNy00YzQwLThhNWItZTk1M2I0Yzc3MGFkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTI0VDA1MTUyM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU3YzllYTM1ZmJkMjNlNWRhOTg5ZThkYmQ4ZTRmZDFlM2JmZDI1MDM5YjVhMDg2MDc2NTdlMTAwMjRmNzU3NWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Ya6iagcBOPeCnPbrgHLZQbMcqc2Lu5ByTwUBZYZGVZc",
+    "imageUrl": "https://github.com/Jestella/portfolio_v4/assets/31642902/ef66c21f-4c9b-42b4-843c-9d3b214c655e",
     "liveDemo": "https://heroicminds.live",
     "gitHub": "https://github.com/Jestella",
     "description1": "Communicated with the client for improvement and implemented changes to optimize the overall design",
@@ -81,7 +81,7 @@
     "liveDemo": "https://jestella.github.io/multimedia/",
     "gitHub": "https://github.com/Jestella/multimedia",
     "description1": "All components, including modal window, slider, tabs, navbar are built with JavaScript from scratch.",
-    "description2": "Learned DOM manipulation."
+    "description2": ""
   },
   {
     "id": 6,

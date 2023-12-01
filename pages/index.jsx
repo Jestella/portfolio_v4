@@ -10,6 +10,7 @@ import ProjectPreview from "../components/ProjectPreview";
 import { server } from "../config";
 
 import {
+  FaAngular,
   FaReact,
   FaNodeJs,
   FaJs,
@@ -28,7 +29,6 @@ export default function Home({}) {
     <>
       <section className="home">
         <ResponsiveIcons />
-
         <Main />
       </section>
 
@@ -51,14 +51,12 @@ export default function Home({}) {
               <p>React</p>
             </li>
             <li>
-              <Image
-                src={nextjs}
-                width={40}
-                height={40}
-                alt="nextjs"
-                className="sass"
-              />
+              <Image src={nextjs} width={40} height={40} alt="nextjs" />
               <p>Next.js</p>
+            </li>
+            <li>
+              <FaAngular color="#DD2331" />
+              <p>Angular</p>
             </li>
             <li>
               <FaNodeJs color="#4aa96c" />
@@ -109,11 +107,11 @@ export default function Home({}) {
           <SectionTitle>devlog</SectionTitle>
           <div className="home-devlog-container">
             <h2>💻</h2>
-            <p>What I learn & build each month.</p>
+            <p>What I am currently working on.</p>
             <div className="center">
-              <button className="btn-dark">
+              <Button>
                 <Link href="/devlog">More</Link>
-              </button>
+              </Button>
             </div>
           </div>
         </section>
@@ -124,9 +122,9 @@ export default function Home({}) {
             <h2>💡</h2>
             <p>Random Experiments.</p>
             <div className="center">
-              <button className="btn-dark">
+              <Button>
                 <Link href="/lab">More</Link>
-              </button>{" "}
+              </Button>{" "}
             </div>
           </div>
         </section>
