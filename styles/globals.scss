@@ -263,7 +263,7 @@ nav {
   margin-right: -50%;
   padding: 20px;
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.9;
   align-items: center;
 }
 
@@ -545,7 +545,6 @@ nav {
     margin: 5px;
 
     &:hover {
-      transition: 0.2s ease-in-out;
       color: var(--color-gray);
       border-radius: 50%;
     }
@@ -553,7 +552,7 @@ nav {
 }
 
 .fixed-icon {
-  font-size: 24px;
+  font-size: 25px;
 }
 
 /* about page */
@@ -861,9 +860,9 @@ footer a {
   }
 
   .project-content-container {
-    width: 100vw;
+    width: 100%;
     margin: 5px 15px 100px;
-    padding: 0 10px;
+    padding: 0 3%;
   }
 
   .project-technologies,
@@ -973,7 +972,7 @@ footer a {
 
   /* project-preview-card */
   .card img {
-    width: 90vw;
+    width: auto;
     height: auto;
   }
 
@@ -1026,5 +1025,10 @@ footer a {
 
   .fixed-item {
     right: 20px;
+    width: 40px;
+
+    button {
+      margin: 8px;
+    }
   }
 }
