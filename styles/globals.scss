@@ -13,6 +13,21 @@
   --color-navy-dark: #313052;
   --color-white: #fefafa;
   --color-text: #2e2424;
+
+  --primary-gradient: linear-gradient(45deg, #c8f2c3, #a8dbfa, #635ee2);
+  --secondary-gradient: linear-gradient(45deg, #c8f2c3, #faa8ea, #635ee2);
+
+  --background-image-black: var(--color-black)
+    url("https://www.transparenttextures.com/patterns/stardust.png");
+
+  --background-image-navy: url("https://www.transparenttextures.com/patterns/stardust.png"),
+    linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+  --background-image-purple: url("https://www.transparenttextures.com/patterns/stardust.png"),
+    linear-gradient(
+      111.4deg,
+      rgba(4, 0, 4, 1) 6.5%,
+      rgba(100, 43, 115, 1) 93.2% 93.2%
+    );
 }
 
 .layout {
@@ -26,8 +41,8 @@ body {
   font-size: 16px;
   font-family: var(--font-family);
   // background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-  background-color: var(--color-black);
-  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background: var(--background-image-black);
+
   color: var(--color-text);
   overscroll-behavior-x: none;
   overscroll-behavior-y: none;
@@ -64,7 +79,7 @@ input {
 
 .btn {
   background-color: transparent;
-  background-image: linear-gradient(45deg, #c8f2c3, #a8dbfa, #635ee2);
+  background-image: var(--primary-gradient);
   color: transparent;
   border: 1px solid var(--color-gray-dark);
   border-radius: 5px;
@@ -75,7 +90,7 @@ input {
   -webkit-background-clip: text; /* For Safari */
 
   &:hover {
-    background-image: linear-gradient(45deg, #c8f2c3, #faa8ea, #635ee2);
+    background-image: var(--secondary-gradient);
     transition: 0.2s ease-in-out;
   }
 }
@@ -127,7 +142,7 @@ input {
   -webkit-text-fill-color: transparent;
 
   &:hover {
-    background-image: linear-gradient(45deg, #c8f2c3, #faa8ea, #635ee2);
+    background-image: var(--secondary-gradient);
   }
 }
 
@@ -211,7 +226,7 @@ nav {
   margin: 0 30px;
 
   &:hover {
-    background-image: linear-gradient(45deg, #c8f2c3, #faa8ea, #635ee2);
+    background-image: var(--secondary-gradient);
     background-color: transparent;
     color: transparent;
     background-clip: text;
@@ -225,7 +240,7 @@ nav {
   font-size: 23px;
 
   &:hover {
-    background-image: linear-gradient(45deg, #c8f2c3, #faa8ea, #635ee2);
+    background-image: var(--secondary-gradient);
     background-color: transparent;
     color: transparent;
     background-clip: text;
@@ -499,8 +514,7 @@ nav {
 /* home - devlog */
 .home-devlog {
   padding: 30px 0 100px;
-  background: url("https://www.transparenttextures.com/patterns/stardust.png"),
-    linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+  background: var(--background-image-navy);
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
   flex-basis: calc(50%);
@@ -515,12 +529,7 @@ nav {
 .home-lab {
   padding: 30px 0 100px;
   flex-basis: calc(50%);
-  background: url("https://www.transparenttextures.com/patterns/stardust.png"),
-    linear-gradient(
-      111.4deg,
-      rgba(4, 0, 4, 1) 6.5%,
-      rgba(100, 43, 115, 1) 93.2% 93.2%
-    );
+  background: var(--background-image-purple);
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
 }
@@ -648,8 +657,7 @@ nav {
 .devlog {
   padding: 30px 0;
   color: var(--color-white);
-  background: url("https://www.transparenttextures.com/patterns/stardust.png"),
-    linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+  background: var(--background-image-navy);
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
 }
@@ -727,7 +735,7 @@ nav {
   border-radius: 5px;
   width: 40px;
   height: 30px;
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 
 /* lab page */
@@ -735,12 +743,7 @@ nav {
 .lab {
   padding: 25vh 0;
   color: var(--color-gray-light);
-  background: url("https://www.transparenttextures.com/patterns/stardust.png"),
-    linear-gradient(
-      111.4deg,
-      rgba(4, 0, 4, 1) 6.5%,
-      rgba(100, 43, 115, 1) 93.2% 93.2%
-    );
+  background: var(--background-image-purple);
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
 }
@@ -757,10 +760,6 @@ footer {
   height: 220px;
 }
 
-.footer-message {
-  font-size: 17px;
-}
-
 footer a {
   display: flex;
   justify-content: center;
@@ -770,9 +769,13 @@ footer a {
 
 .footer-container {
   text-align: center;
-  font-size: 15px;
+  font-size: 0.9rem;
   color: #fff;
   padding-top: 20px;
+}
+
+.footer-message {
+  font-size: 1rem;
 }
 
 .contact-items {
@@ -805,24 +808,16 @@ footer a {
 }
 
 .copyright {
-  font-size: 13px;
+  font-size: 0.9rem;
   color: var(--color-gray-dark);
 }
 
 /* responsive */
 
-@media screen and (max-width: 1082px) {
-  .main-content {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
+@media screen and (max-width: 1023px) {
   body {
     overscroll-behavior-x: none;
   }
-}
-
-@media screen and (max-width: 1024px) {
   /* navbar */
   .nav-links {
     display: none;
@@ -844,14 +839,14 @@ footer a {
 
   .main-image {
     justify-self: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   .main-content {
-    font-size: 30px;
+    font-size: 1.9rem;
     margin: 0;
     text-align: center;
-    line-height: 34px;
+    line-height: 2.2rem;
   }
 
   .home-devlog,
@@ -921,6 +916,11 @@ footer a {
 }
 
 @media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.1rem;
+    padding: 50px 0 0;
+  }
+
   p {
     line-height: 1.3rem;
   }
@@ -936,7 +936,7 @@ footer a {
   }
 
   .button {
-    font-size: 13px;
+    font-size: 0.9rem;
     width: 90px;
   }
 
@@ -958,8 +958,8 @@ footer a {
   }
 
   .main-content {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 1.8rem;
+    line-height: 2.05rem;
     width: 100vw;
     padding-left: 10vw;
     text-align: left;
@@ -971,17 +971,19 @@ footer a {
   }
 
   /* project-preview-card */
+
+  .project-image-container {
+    width: 100%;
+  }
+
+  .project-content-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .card img {
     width: auto;
     height: auto;
-  }
-
-  .about-container span {
-    text-align: center;
-
-    h1 {
-      font-size: 36px;
-    }
   }
 
   .skills-container {
@@ -1010,17 +1012,8 @@ footer a {
     padding: 0 0 50px;
   }
 
-  h1 {
-    font-size: 36px;
-    padding: 50px 0 0;
-  }
-
   .about-container {
     margin: 12px;
-
-    h1 {
-      font-size: 36px;
-    }
   }
 
   .fixed-item {

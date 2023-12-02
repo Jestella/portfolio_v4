@@ -7,7 +7,7 @@
     "technologies": "Angular, Typescript, Figma",
     "imageUrl": "https://github.com/Jestella/portfolio_v4/assets/31642902/3adaae02-4224-43e4-b064-72219c7342ee",
     "liveDemo": "https://www.loom.com/share/453dd5fc441f4f53b392b41226c128ce?sid=be9407f1-b3b7-410c-b563-f36a90487562",
-    "gitHub": "coming soon",
+    "gitHub": "/",
     "description1": "Designed a user interface using Figma for the smart touch control panel, optimized for Crestron TS-1070 touch screen and mobile devices, to be deployed at Sweat and Tonic Yoga Studio.",
     "description2": "Translated UI designs into code, integrated lighting, audio, and video control systems."
   },
@@ -31,7 +31,7 @@
     "technologies": "Next.js, Sass",
     "imageUrl": "https://user-images.githubusercontent.com/31642902/153725838-7d250f4b-0c86-4ced-92ea-e2702f809eba.png",
     "liveDemo": "https://stella-lee.com",
-    "gitHub": "https://github.com/Jestella/portfolio_v3",
+    "gitHub": "https://github.com/Jestella/portfolio_v4",
     "description1": "Updated my portfolio using Next.js for improved performance, modular code, and an enhanced user experience.",
     "description2": "Previous version: https://jestella.github.io/portfolio_v3"
   },

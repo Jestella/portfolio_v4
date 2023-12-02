@@ -54,8 +54,8 @@ const PortfolioItems = () => {
                   </Button>
                 </div>
 
-                <p>&#8226; {description1}</p>
-                <p>&#8226; {description2}</p>
+                <p className="project-description">&#8226; {description1}</p>
+                <p className="project-description">&#8226; {description2}</p>
               </div>
             </div>
           </div>
