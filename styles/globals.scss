@@ -337,10 +337,6 @@ nav {
 .responsive_icon {
   position: absolute;
   font-size: 34px;
-
-  @media screen and (max-width: 799px) {
-    font-size: 25px;
-  }
 }
 
 .fa-code-branch {
@@ -974,27 +970,27 @@ footer a {
   }
 
   .fa-code-branch {
-    top: 90px;
+    top: 110px;
     left: 280px;
   }
 
   .fa-cog {
-    top: 70px;
+    top: 90px;
     left: 120px;
   }
 
   .fa-star {
-    top: 210px;
+    top: 230px;
     right: 350px;
   }
 
   .fa-wrench {
-    top: 140px;
+    top: 160px;
     right: 50px;
   }
 
   .fa-code {
-    top: 290px;
+    top: 300px;
     right: 90px;
   }
 
