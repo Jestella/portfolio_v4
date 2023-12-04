@@ -19,7 +19,6 @@
 
   --background-image-black: var(--color-black)
     url("https://www.transparenttextures.com/patterns/stardust.png");
-
   --background-image-navy: url("https://www.transparenttextures.com/patterns/stardust.png"),
     linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
   --background-image-purple: url("https://www.transparenttextures.com/patterns/stardust.png"),
@@ -175,7 +174,6 @@ input {
   .card-text {
     width: 400px;
     height: 90px;
-    cursor: pointer;
   }
 
   .card-project-name {
@@ -274,7 +272,6 @@ nav {
   background-color: var(--color-black);
   width: 100vw;
   height: 100vh;
-  margin-top: 1rem;
   margin-right: -50%;
   padding: 20px;
   font-size: 14px;
@@ -342,7 +339,7 @@ nav {
   font-size: 34px;
 
   @media screen and (max-width: 799px) {
-    display: none;
+    font-size: 25px;
   }
 }
 
@@ -970,6 +967,37 @@ footer a {
     margin: 20px 12px 30px;
   }
 
+  /* responsive icons */
+
+  .responsive_icon {
+    font-size: 25px;
+  }
+
+  .fa-code-branch {
+    top: 90px;
+    left: 280px;
+  }
+
+  .fa-cog {
+    top: 70px;
+    left: 120px;
+  }
+
+  .fa-star {
+    top: 210px;
+    right: 350px;
+  }
+
+  .fa-wrench {
+    top: 140px;
+    right: 50px;
+  }
+
+  .fa-code {
+    top: 290px;
+    right: 90px;
+  }
+
   /* project-preview-card */
 
   .project-image-container {
@@ -1014,6 +1042,10 @@ footer a {
 
   .about-container {
     margin: 12px;
+
+    .cursive-text {
+      font-size: 3rem;
+    }
   }
 
   .fixed-item {
