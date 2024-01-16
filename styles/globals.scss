@@ -163,7 +163,7 @@ input {
   img {
     max-width: 400px;
     height: 260px;
-    opacity: 0.8;
+    opacity: 0.9;
 
     &:hover {
       opacity: 1;
@@ -183,10 +183,6 @@ input {
   .card-project-tech {
     font-size: 0.9rem;
     font-weight: 500;
-    margin: 0;
-  }
-
-  .custom-button {
     margin: 0;
   }
 }
@@ -307,7 +303,7 @@ nav {
   padding: 2px;
   border-radius: 50%;
   cursor: pointer;
-  opacity: 80%;
+  opacity: 90%;
 
   &:hover {
     transition: 0.1.5s ease-in-out;
@@ -585,7 +581,6 @@ nav {
 
   p {
     font-size: 19px;
-    font-weight: 200;
   }
   span {
     font-weight: 500;

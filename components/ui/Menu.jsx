@@ -4,9 +4,6 @@ const Menu = () => {
   return (
     <>
       <p>
-        <Link href="/about">ABOUT</Link>
-      </p>
-      <p>
         <Link href="/work">WORK</Link>
       </p>
       <p>
@@ -14,6 +11,9 @@ const Menu = () => {
       </p>
       <p>
         <Link href="/lab">LAB</Link>
+      </p>
+      <p>
+        <Link href="/about">ABOUT</Link>
       </p>
     </>
   );

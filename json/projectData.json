@@ -3,12 +3,12 @@
     "id": 1,
     "title": "Sweat and Tonic",
     "year": "2023",
-    "sub": "Sweat and Tonic UI Design & Development for a smart touch control panel (IoT development)",
+    "sub": "UI Design & Development for a smart touch control panel (IoT development)",
     "technologies": "Angular, Typescript, Figma",
     "imageUrl": "https://github.com/Jestella/portfolio_v4/assets/31642902/3adaae02-4224-43e4-b064-72219c7342ee",
     "liveDemo": "https://www.loom.com/share/453dd5fc441f4f53b392b41226c128ce?sid=be9407f1-b3b7-410c-b563-f36a90487562",
     "gitHub": "/",
-    "description1": "Designed a user interface using Figma for the smart touch control panel, optimized for Crestron TS-1070 touch screen and mobile devices, to be deployed at Sweat and Tonic Yoga Studio.",
+    "description1": "Designed a user interface using Figma for the smart touch control pfanel, optimized for Crestron TS-1070 touch screen and mobile devices, to be deployed at Sweat and Tonic Yoga Studio.",
     "description2": "Translated UI designs into code, integrated lighting, audio, and video control systems."
   },
   {
